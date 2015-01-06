@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'unicorn', '4.8.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -41,9 +42,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
 
-  gem 'rails_12factor', group: :production
-
-  gem 'unicorn'
+group :production do
+  gem 'rails_12factor', '0.0.3'
 end
 
