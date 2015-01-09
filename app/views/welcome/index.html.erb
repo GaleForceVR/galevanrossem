@@ -1,2 +1,12 @@
 <h2>Hello World</h2>
 <p>The time is now: <%= Time.now %></p>
+<hr>
+<%# if is_admin? %>
+  <h3>This is admin content</h3>
+<%# end %>
+<% if user_session %>
+  <h4 style="color: red;">This is user content</h4>
+<% end %>
+<h2><%= @posts.first.title if @posts.first %></h2>
+<p><%= @posts.first.content if @posts.first %></p>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
