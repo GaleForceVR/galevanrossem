@@ -1,9 +1,9 @@
 <h2>Hello World</h2>
 <p>The time is now: <%= Time.now %></p>
 <hr>
-<p style="color: blue;"><%= current_user.email %></p>
-<p style="color: blue;"><%= current_user.role %></p>
-<% if current_user.role == "admin" %>
+<p style="color: blue;"><%= current_user.email if current_user %></p>
+<p style="color: blue;"><%= current_user.role if current_user %></p>
+<% if current_user && current_user.role == "admin" %>
   <h3>This is admin content</h3>
 <% end %>
 <% if user_session %>
