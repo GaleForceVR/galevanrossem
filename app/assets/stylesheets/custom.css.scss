@@ -23,6 +23,7 @@ $lightestGold   : lighten( $lightGold, 25% );
 $mediumGold     : darken( $lightGold, 15% );
 $gold           : darken( $lightGold, 33% );
 $darkGold       : darken( $lightGold, 45%);
+$darkestGold    : darken( $lightGold, 62%);
 
 $darkestGrey    : #161616;
 $lightestGrey   : lighten( $darkestGrey, 80% );
@@ -101,10 +102,12 @@ body {
   background-color: $black;
   background-image: image-url('leather-texture.png');
   background-size: cover;
+  letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
+  letter-spacing: 2px;
 }
 
 a {
@@ -112,13 +115,26 @@ a {
   color: $linkColor;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul li ul {
+  padding-left: 20px;
+}
+
+// ul li {
+//   margin-left: 0;
+// }
+
 .wrapper {
   min-height:100%;
   position: relative;
 }
 .container {
-  padding-top: 95px;
-  padding-bottom: 70px;
+  width: 100%;
+  padding-top: 7.5%;
+  // padding-bottom: 70px;
 }
 
 ////////// HEADER
@@ -136,6 +152,7 @@ header {
   left: 0;
   z-index: 998;
   background-color: $gold;
+  box-shadow: 3px 3px 25px $black;
 }
 
 .nav-highlight {
@@ -143,7 +160,7 @@ header {
   position: fixed;
   top: 6px;
   left: 0;
-  box-shadow: 0 -4px 12px 2px $lightestGold;
+  box-shadow: 0 -5.5px 12px 1px $lightestGold;
   height: 10px;
 }
 
@@ -161,11 +178,17 @@ header {
   top: 75px;
   left: 0;
   height: 10px;
-  box-shadow: 0 -3px 12px 2px $black;
+  box-shadow: 0 -7px 8px 1px $darkestGold;
 }
 
+// .logo a {
+//   width: 200px;
+//   overflow: hidden;
+// }
+
 .logo a img {
-  position: fixed;
+  position: absolute;
+  clip: rect(0px 425px 75px 0px);
   top: 10px;
   left: 15px;
   height: 55px;
@@ -214,6 +237,152 @@ nav ul li a {
   display: inline-block;
   margin-right: 0;
   padding-right: 50px;
+}
+
+////////// CONTENT
+
+//////////
+
+.left-gutter {
+  width: 13%;
+  padding: 0 6.5% 3% 3%;
+  display: inline-block;
+  // background-color: yellow;
+  color: $lightestGrey;
+  height: 100%;
+  float: left;
+}
+
+// .bio h3 {
+//   font-family: 'Roboto Condensed', sans-serif;
+// }
+
+.bio p {
+  font-weight: 300;
+  font-size: .8em;
+  padding-bottom: 100px;
+}
+
+.profile-photo {
+  width: 125px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 12px 3px $black;
+}
+
+.main-content {
+  // width: 77.5%;
+  width: 77.5%;
+  display: inline-block;
+  height: 100%;
+}
+
+.headline {
+  position: relative;
+  width: 40%;
+  left: -3.5%;
+  padding: 3.5% 60% 250px 3.5%;
+  background-color: $marsala;
+  color: white;
+  -moz-border-radius-top-left: 30px;
+  -webkit-border-top-left-radius: 30px;
+  -khtml-border-top-left-radius: 30px;
+  border-top-left-radius: 30px;
+  -moz-border-radius-bottom-left: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -khtml-border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.headline h1 {
+  font-size: 250%;
+  margin: 0 0 12px 0;
+  text-shadow: 3px 3px 10px $black;
+}
+
+.sub-headline {
+  margin-top: 0;
+}
+
+.date-line {
+  font-size: 80%;
+  margin: 0;
+  text-shadow: 1.5px 1.5px 1px $black;
+}
+
+.center-content {
+  position: relative;
+  top: -150px;
+  background-color: white;
+  margin: 0 1% 0 1%;
+  padding: 4%;
+  min-height: 500px;
+  float: left;
+  width: 46.8%;
+  color: $black;
+  border-radius: 20px;
+}
+
+.center-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.25px;
+  }
+}
+
+.center-content a {
+  font-weight: bold;
+}
+
+.center-content {
+  font-family: 'Lato', sans-serif;
+}
+
+.feature-image {
+  position: absolute;
+  left: 75%;
+  top: -100px;
+  width: 95%;
+  background-color: $darkestGrey;
+  color: $lightestGrey;
+  box-shadow: 10px 8px 40px 5px $black;
+}
+
+.feature-image-caption {
+  clear: both;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: .8em;
+  width: 90%;
+  padding: 1% 5% 1% 5%;
+}
+
+.feature-image img {
+  width: 100%;
+  display: block;
+}
+
+.feature-image-spacer {
+  display: inline-block;
+  float: right;
+  height: 1px;
+  width: 30%;
+  padding-top: 70%;
+}
+
+.left-image {
+  margin: 10% 0 10% 0;
+  display: inline-block;
+  width: 60%;
+  position: relative;
+  float: left;
+  left: -10%;
+  background-color: $darkestGrey;
+  color: $lightestGrey;
+  box-shadow: 7px 6px 30px 2px $black;
+}
+
+.left-image img {
+  width: 100%;
+  // display: block;
 }
 
 ////////// FOOTER
