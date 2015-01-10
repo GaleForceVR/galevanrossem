@@ -1,0 +1,217 @@
+
+////////// COLORS
+
+//////////
+
+//// PRIMARY
+$marsala        : #955251;
+$primaryColor   : $marsala;
+////
+
+//// LINKS
+$richMarsala    : #ad4540;
+$linkColor      : $richMarsala;
+////
+
+
+$lightMarsala   : lighten( $marsala, 33% );
+$mediumMarsala  : lighten( $marsala, 20% );
+$darkMarsala    : darken( $marsala, 33% );
+
+$lightGold      : #fbd379;
+$lightestGold   : lighten( $lightGold, 25% );
+$mediumGold     : darken( $lightGold, 15% );
+$gold           : darken( $lightGold, 33% );
+$darkGold       : darken( $lightGold, 45%);
+
+$darkestGrey    : #161616;
+$lightestGrey   : lighten( $darkestGrey, 80% );
+$lightGrey      : lighten( $darkestGrey, 60% );
+$mediumGrey     : lighten( $darkestGrey, 33% );
+$darkGrey       : lighten( $darkestGrey, 20% );
+$black          : black;
+
+///////// TEST DIVS
+
+/////////
+
+// .marsala {
+//   background-color: $lightestGrey;
+//   width: 200px;
+//   height: 50px;
+//   margin: 30px;
+// }
+// .rich-marsala {
+//   background-color: $lightGrey;
+//   width: 200px;
+//   height: 50px;
+//   margin: 30px;
+// }
+
+// .light-marsala {
+//   background-color: $mediumGrey;
+//   width: 200px;
+//   height: 50px;
+//   margin: 30px;
+// }
+
+// .medium-marsala {
+//   background-color: $darkGrey;
+//   width: 200px;
+//   height: 50px;
+//   margin: 30px;
+// }
+
+// .dark-marsala {
+//   background-color: $darkestGrey;
+//   width: 200px;
+//   height: 50px;
+//   margin: 30px;
+// }
+
+// .black {
+//   background-color: black;
+//   width: 400px;
+//   margin: 30px;
+//   padding: 30px;
+//   color: white;
+//   display: inline-block;
+// }
+
+// .white {
+//   background-color: white;
+//   width: 400px;
+//   margin: 30px;
+//   padding: 30px;
+//   display: inline-block;
+// }
+
+////////// BODY
+
+//////////
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $lightGold;
+  background-color: $black;
+  background-image: image-url('leather-texture.png');
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+}
+
+.wrapper {
+  min-height:100%;
+  position: relative;
+}
+.container {
+  padding-top: 95px;
+  padding-bottom: 70px;
+}
+
+////////// HEADER
+
+//////////
+
+header {
+  background-image: image-url('wood-nav-bar.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  background-color: $gold;
+}
+
+.logo a img {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  height: 55px;
+}
+
+nav {
+  color: black;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-weight: bold;
+  text-shadow: 1px 1px 1.2px $lightestGold;
+  padding-left: 50px;
+  height: 75px;
+  line-height: 75px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: $black;
+}
+
+.nav-links {
+  display: inline-block;
+  padding-right: 50px;
+  border-right: 1px solid $darkGold;
+  box-shadow: 2px 0 2px -2px $lightestGold;
+}
+
+.login {
+  display: inline-block;
+  margin-right: 0;
+  padding-right: 50px;
+}
+
+////////// FOOTER
+
+//////////
+
+footer {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  // margin-top: 100px;
+  // padding-top: 50px;
+  // padding-left: 20%;
+  width: 100%;
+  // background-color: $darkGrey;
+}
+
+.copyright a {
+  color: $darkGrey;
+  // text-shadow: 1.4px 1.3px 1.8px $black;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
