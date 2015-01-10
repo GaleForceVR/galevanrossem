@@ -138,6 +138,32 @@ header {
   background-color: $gold;
 }
 
+.nav-highlight {
+  width: 100%;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  box-shadow: 0 -4px 12px 2px $lightestGold;
+  height: 10px;
+}
+
+.nav-highlight-rounder {
+  width: 100%;
+  position: fixed;
+  top: -3px;
+  height: 5px;
+  box-shadow: 0 4px 8px 2px $lightestGold;
+}
+
+.nav-shadow {
+  width: 100%;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  height: 10px;
+  box-shadow: 0 -3px 12px 2px $black;
+}
+
 .logo a img {
   position: fixed;
   top: 10px;
@@ -181,7 +207,7 @@ nav ul li a {
   display: inline-block;
   padding-right: 50px;
   border-right: 1px solid $darkGold;
-  box-shadow: 2px 0 2px -2px $lightestGold;
+  box-shadow: 2px -2px 2px -2px $lightestGold;
 }
 
 .login {
