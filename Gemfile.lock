@@ -94,6 +94,7 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    normalize-rails (3.0.1)
     oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
@@ -214,6 +215,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  normalize-rails
   omniauth
   omniauth-github
   omniauth-twitter
