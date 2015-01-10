@@ -1,6 +1,68 @@
+<div class="left-gutter">
+  <div class="bio">
+    <%= image_tag('gvr-profile-photo.jpg', class: "profile-photo") %>
+    <h3>Web Developer Craftsman</h3>
+    <p>I'm an Entreprenuer and Graphic Designer turned Web Developer Craftsman. If you think that form and function are both equally important, then I think we should talk.</p>
+  </div>
+  <div class="links">
+    <ul>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/blog">Blog</a>
+        <ul>
+          <li><a href="/post/1">Post 1</a></li>
+          <li><a href="/post/2">Post 2</a></li>
+          <li><a href="/post/3">Post 3</a></li>
+          <li><a href="/post/4">Post 4</a></li>
+          <li><a href="/post/5">Post 5</a></li>
+        </ul>
+      </li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/social_media">Social Media</a></li>
+    </ul>
+  </div>
+</div>
 
+<div class="main-content">
+  <article>
 
+    <div class="headline">
+      <h1><%= @post.title %>: This is an extended title</h1>
+      <p class="date-line"><%= Time.now.strftime("%B %d, %Y") %></p>
+    </div>
 
+    <div class="center-content">
+      <div class="feature-image-spacer"></div>
+      <div class="feature-image">
+        <%= image_tag('nik-wallenda.jpg') %>
+        <p class="feature-image-caption">This is a really cool shot of Nik Wallenda and it's a great feature image example.</p>
+      </div>  
+      <h3 class="sub-headline">This is the sub-headline for the Center Content area</h3>
+      <p><%= @post.content %></p>
+      <p>This is the center content area. This should be in the middle of of the page in a relatively large width div. This will be the main article content</p>
 
-<h3><%= @post.title %></h3>
-<p><%= @post.content %><p>
+      <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Mauris non massa sed nunc porttitor hendrerit quis quis purus. Donec sit amet neque sed massa aliquet dictum. Pellentesque sapien velit, varius in pellentesque sit amet, ultricies non magna. Pellentesque vehicula pulvinar neque a gravida. Ut mattis facilisis arcu lacinia vestibulum. Nullam quis dictum augue. Ut nec sapien hendrerit, interdum quam eu, tempus est.</p>
+
+      <p>Curabitur aliquam mattis erat, eget tempor metus faucibus sed. Mauris vel eros ultricies, pharetra justo lobortis, sagittis metus. Nulla ultrices tellus et maximus tincidunt. Nunc interdum libero metus, ut accumsan mi tempor sit amet. Donec porta eget lacus pharetra consectetur. Nulla ac vulputate lacus, ullamcorper posuere ligula. Cras vehicula at tellus vitae feugiat. Vivamus et dictum ligula. Donec iaculis turpis ut dignissim suscipit. Sed eros tortor, commodo non ultricies in, consectetur sit amet neque.</p>
+
+      <p>Proin rutrum luctus lacus. Nam in efficitur nisl. Nullam placerat a diam a pretium. Curabitur sodales eros velit, non eleifend neque blandit vel. Vivamus a finibus urna. Aenean gravida et enim eu elementum. Ut non ante ut neque dignissim tempor ut ut nisi. Nam mauris massa, tristique a leo non, finibus venenatis diam. Mauris ultricies ex in lacus venenatis, sed consectetur nulla sollicitudin. Mauris eu erat ullamcorper, sagittis justo vel, dignissim enim. Donec pharetra dolor sagittis, faucibus dui id, consectetur magna. Fusce egestas risus ac porttitor vestibulum. Nam fringilla, eros id interdum elementum, lectus ipsum dictum sapien, id consequat justo mi ac eros. Donec eleifend ante nec facilisis euismod.</p>
+
+      <p>Fusce at suscipit lectus, eu malesuada orci. Integer tempor odio id massa suscipit porta. In aliquet vulputate elementum. Aliquam maximus turpis quis leo efficitur, sit amet convallis quam pretium. Quisque at malesuada enim. Pellentesque sed mauris eget tortor rhoncus lobortis at at libero. Integer orci nisi, pretium sed tortor non, convallis eleifend lectus. Donec at consectetur urna, nec laoreet neque. Sed venenatis libero risus, et porttitor tortor ultrices ut. Fusce placerat bibendum ligula, in aliquet odio imperdiet sed. Sed sit amet ipsum id dui dapibus blandit sit amet at est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+      <div class="left-image">
+        <%= image_tag('nik-wallenda.jpg') %>
+        <p class="feature-image-caption">This is a really cool shot of Nik Wallenda and it's a great feature image example.</p>
+      </div>
+
+      <p>Etiam sagittis mauris eget elit rutrum condimentum. Pellentesque rhoncus ex sit amet erat imperdiet cursus. Fusce eget erat vulputate, volutpat sem at, scelerisque enim. Nam lobortis elit ut convallis vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sollicitudin volutpat metus in vulputate. Sed ex est, pharetra id tincidunt gravida, feugiat quis est. Ut feugiat nulla bibendum ante tempus pellentesque. Phasellus vulputate scelerisque erat. Pellentesque egestas lacus vitae elit consequat, id interdum arcu ullamcorper. Morbi ac efficitur urna, et rutrum est. Etiam et dolor lacus.</p>
+    </div>
+
+    <div class="right-gutter">
+      
+    </div>
+
+  </article>
+</div>
+
+<!-- <h3><%= @post.title %></h3>
+<p><%= @post.content %><p> -->
