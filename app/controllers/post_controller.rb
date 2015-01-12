@@ -2,6 +2,7 @@ class PostController < ApplicationController
   def show
     @user = current_user if current_user
     @post = Post.find(params[:id])
+    @image = @post.image
   end
 
   def new
@@ -25,6 +26,7 @@ class PostController < ApplicationController
 
   private
   def post_creation_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :image,
+      images_attributes: [:image_url] )
   end
 end
