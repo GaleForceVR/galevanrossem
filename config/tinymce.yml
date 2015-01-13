@@ -9,3 +9,4 @@ plugins:
 - code
 - spellchecker
 - link
+external_image_list_url : images_path

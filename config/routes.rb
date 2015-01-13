@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images, only: [:index, :show, :new, :create, :edit, :update]
   resource :posts, only: [:show, :create]
   resources :post, only: [:show, :new, :edit, :update]
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }

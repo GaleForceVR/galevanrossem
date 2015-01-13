@@ -1,0 +1,13 @@
+<%= @gallery_images.each do |this_image| %>
+  <div class="gallery-thumb">
+    <%= image_tag this_image.image.url(:thumb).to_s %>
+    <p><%= this_image.title.to_s %></p>
+  </div>
+<% end %>
+<%= form_for @image, :html => {:multipart => true} do |f| %>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :caption, placeholder: "Caption" %>
+  <%= f.file_field :image %>
+  <%= f.submit %>  
+<% end %>
+
