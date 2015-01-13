@@ -43,6 +43,7 @@ gem 'normalize-rails'
 
 gem 'tinymce-rails'
 
+gem 'rmagick'
 gem 'carrierwave'
 
 group :development, :test do
