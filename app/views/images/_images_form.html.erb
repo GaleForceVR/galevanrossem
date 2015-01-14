@@ -1,7 +1,7 @@
-<%= @gallery_images.each do |this_image| %>
+<% @gallery_images.each do |this_image| %>
   <div class="gallery-thumb">
     <%= image_tag this_image.image.url(:thumb).to_s %>
-    <p><%= this_image.title.to_s %></p>
+    <p><%= this_image.image.url.to_s %></p>
   </div>
 <% end %>
 <%= form_for @image, :html => {:multipart => true} do |f| %>
