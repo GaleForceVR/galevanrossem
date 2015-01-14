@@ -27,34 +27,17 @@
   <article>
 
     <div class="headline">
-      <h1><%= @post.title %>: This is an extended title</h1>
+      <h1><%= @post.title %></h1>
       <p class="date-line"><%= Time.now.strftime("%B %d, %Y") %></p>
     </div>
 
     <div class="center-content">
       <div class="feature-image-spacer"></div>
       <div class="feature-image">
-        <%= image_tag('nik-wallenda.jpg') %>
-        <p class="feature-image-caption">This is a really cool shot of Nik Wallenda and it's a great feature image example.</p>
-      </div>  
-      <h3 class="sub-headline">This is the sub-headline for the Center Content area</h3>
-      <p><%= @post.content.html_safe %></p>
-      <p>This is the center content area. This should be in the middle of of the page in a relatively large width div. This will be the main article content</p>
-
-      <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Mauris non massa sed nunc porttitor hendrerit quis quis purus. Donec sit amet neque sed massa aliquet dictum. Pellentesque sapien velit, varius in pellentesque sit amet, ultricies non magna. Pellentesque vehicula pulvinar neque a gravida. Ut mattis facilisis arcu lacinia vestibulum. Nullam quis dictum augue. Ut nec sapien hendrerit, interdum quam eu, tempus est.</p>
-
-      <p>Curabitur aliquam mattis erat, eget tempor metus faucibus sed. Mauris vel eros ultricies, pharetra justo lobortis, sagittis metus. Nulla ultrices tellus et maximus tincidunt. Nunc interdum libero metus, ut accumsan mi tempor sit amet. Donec porta eget lacus pharetra consectetur. Nulla ac vulputate lacus, ullamcorper posuere ligula. Cras vehicula at tellus vitae feugiat. Vivamus et dictum ligula. Donec iaculis turpis ut dignissim suscipit. Sed eros tortor, commodo non ultricies in, consectetur sit amet neque.</p>
-
-      <p>Proin rutrum luctus lacus. Nam in efficitur nisl. Nullam placerat a diam a pretium. Curabitur sodales eros velit, non eleifend neque blandit vel. Vivamus a finibus urna. Aenean gravida et enim eu elementum. Ut non ante ut neque dignissim tempor ut ut nisi. Nam mauris massa, tristique a leo non, finibus venenatis diam. Mauris ultricies ex in lacus venenatis, sed consectetur nulla sollicitudin. Mauris eu erat ullamcorper, sagittis justo vel, dignissim enim. Donec pharetra dolor sagittis, faucibus dui id, consectetur magna. Fusce egestas risus ac porttitor vestibulum. Nam fringilla, eros id interdum elementum, lectus ipsum dictum sapien, id consequat justo mi ac eros. Donec eleifend ante nec facilisis euismod.</p>
-
-      <p>Fusce at suscipit lectus, eu malesuada orci. Integer tempor odio id massa suscipit porta. In aliquet vulputate elementum. Aliquam maximus turpis quis leo efficitur, sit amet convallis quam pretium. Quisque at malesuada enim. Pellentesque sed mauris eget tortor rhoncus lobortis at at libero. Integer orci nisi, pretium sed tortor non, convallis eleifend lectus. Donec at consectetur urna, nec laoreet neque. Sed venenatis libero risus, et porttitor tortor ultrices ut. Fusce placerat bibendum ligula, in aliquet odio imperdiet sed. Sed sit amet ipsum id dui dapibus blandit sit amet at est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-      <div class="left-image">
         <%= image_tag @post.image.to_s %>
-        <p class="feature-image-caption">This is a really cool shot of Nik Wallenda and it's a great feature image example.</p>
-      </div>
-
-      <p>Etiam sagittis mauris eget elit rutrum condimentum. Pellentesque rhoncus ex sit amet erat imperdiet cursus. Fusce eget erat vulputate, volutpat sem at, scelerisque enim. Nam lobortis elit ut convallis vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sollicitudin volutpat metus in vulputate. Sed ex est, pharetra id tincidunt gravida, feugiat quis est. Ut feugiat nulla bibendum ante tempus pellentesque. Phasellus vulputate scelerisque erat. Pellentesque egestas lacus vitae elit consequat, id interdum arcu ullamcorper. Morbi ac efficitur urna, et rutrum est. Etiam et dolor lacus.</p>
+        <p class="feature-image-caption"><%= @post.feature_caption %></p>
+      </div>  
+      <p><%= @post.content.html_safe %></p>
     </div>
 
     <div class="right-gutter">
