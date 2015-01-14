@@ -20,6 +20,7 @@ $darkMarsala    : darken( $marsala, 33% );
 
 $lightGold      : #fbd379;
 $lightestGold   : lighten( $lightGold, 25% );
+$lighterGold   : lighten( $lightGold, 16% );
 $mediumGold     : darken( $lightGold, 15% );
 $gold           : darken( $lightGold, 33% );
 $darkGold       : darken( $lightGold, 45%);
@@ -145,6 +146,7 @@ header {
   background-image: image-url('wood-nav-bar.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 -35px;
   height: 75px;
   width: 100%;
   position: fixed;
@@ -189,9 +191,9 @@ header {
 .logo a img {
   position: absolute;
   clip: rect(0px 425px 75px 0px);
-  top: 10px;
+  top: 12.5px;
   left: 15px;
-  height: 55px;
+  height: 50px;
 }
 
 nav {
@@ -215,7 +217,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-weight: bold;
-  text-shadow: 1px 1px 1.2px $lightestGold;
+  text-shadow: 1px 1px 1.2px $lighterGold;
   padding-left: 50px;
   height: 75px;
   line-height: 75px;
