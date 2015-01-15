@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resource :posts, only: [:show, :create]
   resources :post, only: [:show, :new, :edit, :update]
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+  get "/admin", to: "static_pages#admin", as: :admin_page
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
