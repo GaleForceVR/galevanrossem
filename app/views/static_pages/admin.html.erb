@@ -27,7 +27,7 @@
   <article>
 
     <div class="headline">
-      <h1>Upload Images</h1>
+      <h1>Dashboard</h1>
       <p class="date-line"><%= Time.now.strftime("%B %d, %Y") %></p>
     </div>
 
@@ -35,9 +35,6 @@
         
       <% if current_user && current_user.role == "admin" %>
         <h3>This is admin content</h3>
-        <div "images-form">
-        <%= render partial: "images_form", locals: {image: Image.new, button_text: "Upload Image"} %>
-        </div>
       <% else %>
         <h3>You are not authorized for this action</h3>
         <p>Please login if you are a site administrator</p>

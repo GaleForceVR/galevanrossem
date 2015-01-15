@@ -1,30 +1,45 @@
-<h2>Hello World</h2>
-<p>The time is now: <%= Time.now %></p>
-<hr>
-<p style="color: blue;"><%= current_user.email if current_user %></p>
-<p style="color: blue;"><%= current_user.role if current_user %></p>
-<% if current_user && current_user.role == "admin" %>
-  <h3>This is admin content</h3>
-<% end %>
-<% if user_session %>
-  <h4 style="color: red;">This is user content for user: <%= @user.email %></h4>
-<% end %>
-<h2><%= @posts.first.title if @posts.first %></h2>
-<p><%= @posts.first.content if @posts.first %></p>
-<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
-
-<!-- <div class="white">
-  <div class="marsala">primary</div>
-  <div class="rich-marsala">rich</div>
-  <div class="light-marsala">light</div>
-  <div class="medium-marsala">medium</div>
-  <div class="dark-marsala">dark</div>
+<div class="home">
+  <div class="home-container">
+    <div class="home-bio">
+      <%= image_tag('gvr-profile-photo.jpg', class: "profile-photo") %>
+    </div>
+    <h1 class="greeting">Hi, I'm Gale.</h1>
+    <div class="main-quote"><p>I'm a problem solver and a craftsman. I love to build things and especially things on the web. I also love to learn. I'm looking for an opportunity to grow with a company. I think we should talk.</p></div>
+  </div>
 </div>
+<div class="home-solid">
+  <div class="home-container">
+    <div class="home-left">
+      <h2 class="home-headline">Things I've Built</h2>
+      <p>From the time I was a kid, I've always been a builder. From model rockets and model railroads to remote control cars and planes.</p>
+      <p>As an adult, I built a sign out of wood that stood 12 feet tall in the back of a truck, and I designed my own logos and print materials for some of my business ventures.</p>
+      <p>Of course, I built websites as well. First for Madisen's Match, and then the Kiwanis Club. I also built some sites for potential businesses. A fantasy football blog site and then basketball themed site called Dunk City, FL.</p>
+      <p>Most recently, I dreamed up, built, and ran an entire e-commerce t-shirt printing company by myself.</p>
+      <p>Ultimately, my passion for visual design and craftsmanship led me to Dev Bootcamp and a chance to pursue my perfect career.</p>
+    </div>
+    <div class="home-right">
+      
+    </div>
 
-<div class="black">
-  <div class="marsala">primary</div>
-  <div class="rich-marsala">rich</div>
-  <div class="light-marsala">light</div>
-  <div class="medium-marsala">medium</div>
-  <div class="dark-marsala">dark</div>
-</div> -->
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="home-transparent">
+  <div class="home-container">
+    <div class="home-left">
+
+    </div>
+    <div class="home-right">
+      
+    </div>
+    <div class="clear">
+      
+    </div>
+  </div>
+</div>
+<div class="home-solid">
+  <div class="home-container">
+    
+  </div>
+</div>
+<div class="footer-spacer"></div>

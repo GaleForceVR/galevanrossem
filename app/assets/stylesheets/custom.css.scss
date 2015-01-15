@@ -20,7 +20,7 @@ $darkMarsala    : darken( $marsala, 33% );
 
 $lightGold      : #fbd379;
 $lightestGold   : lighten( $lightGold, 25% );
-$lighterGold   : lighten( $lightGold, 16% );
+$lighterGold    : lighten( $lightGold, 16% );
 $mediumGold     : darken( $lightGold, 15% );
 $gold           : darken( $lightGold, 33% );
 $darkGold       : darken( $lightGold, 45%);
@@ -31,7 +31,8 @@ $lightestGrey   : lighten( $darkestGrey, 80% );
 $lightGrey      : lighten( $darkestGrey, 60% );
 $mediumGrey     : lighten( $darkestGrey, 33% );
 $darkGrey       : lighten( $darkestGrey, 20% );
-$black          : black;
+$darkerGrey     : lighten( $darkestGrey, 5% );
+$black          : #000000;
 
 ///////// TEST DIVS
 
@@ -99,9 +100,9 @@ html {
 body {
   height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
-  color: $lightGold;
+  color: $lightestGrey;
   background-color: $black;
-  background-image: image-url('leather-texture.png');
+  background-image: image-url('new-leather-texture.png');
   background-size: cover;
   letter-spacing: 1px;
 }
@@ -266,10 +267,21 @@ nav ul li a {
   padding-bottom: 100px;
 }
 
+.home-bio {
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+}
+
 .profile-photo {
   width: 125px;
   border-radius: 15px;
   box-shadow: 3px 3px 12px 3px $black;
+}
+
+.home-bio img.profile-photo {
+  width: 175px;
 }
 
 .main-content {
@@ -300,6 +312,13 @@ nav ul li a {
   font-size: 250%;
   margin: 0 0 12px 0;
   text-shadow: 3px 3px 10px $black;
+}
+
+.greeting {
+  text-align: center;
+  color: $richMarsala;
+  padding-bottom: 15px;
+  // padding-bottom: 25px;
 }
 
 .sub-headline {
@@ -439,6 +458,141 @@ nav ul li a {
 
 .gallery-thumb img {
   width: 100%;
+}
+
+.images-form {
+  z-index: 980;
+}
+
+.home {
+  width: 100%;
+  // padding-bottom: 50px;
+  padding-bottom: 5.5%;
+}
+
+.home-transparent, .home-solid {
+  width: 100%;
+  padding: 10% 0;
+}
+.home .home-container {
+  max-width: 600px;
+}
+
+.home .home-container, .home-transparent .home-container, .home-solid .home-container {
+  margin: 0 auto;
+}
+.home-transparent .home-container, .home-solid .home-container {
+  max-width: 800px;
+  height: inherit;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.home-solid {
+  width: 100%;
+  // min-height: 200px;
+  background-color: $darkerGrey;
+}
+
+.home-solid .home-left {
+  display: inline-block;
+  float: left;
+  width: 48%;
+  padding: 0 3.5%;
+  height: auto;
+  font-size: 90%;
+}
+
+.home-solid .home-right {
+  display: inline-block;
+  width: 38%;
+  padding: 0 3.5%;
+  background-color: $mediumGrey;
+  min-height: 100px;
+}
+
+// .home-transparent {
+//   width: 100%;
+//   // min-height: 200px;
+//   // background-color: $darkerGrey;
+// }
+
+.home-transparent .home-left {
+  display: inline-block;
+  float: left;
+  width: 38%;
+  padding: 0 3.5%;
+  min-height: 100px;
+  background-color: red;
+}
+
+.home-transparent .home-right {
+  display: inline-block;
+  width: 48%;
+  padding: 0 3.5%;
+  background-color: $mediumGrey;
+  min-height: 100px;
+  font-size: 90%;
+}
+
+.clear {
+  width: 100%;
+  clear: both;
+}
+
+.attribution {
+  float: right;
+  font-style: italic;
+}
+
+blockquote {
+  background: $lightGrey;
+  color: $black;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 40px;
+  padding: 0.5em 10px 20px 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 10px;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.main-quote {
+  background: $lightGrey;
+  color: $black;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 40px;
+  padding: 0.5em 10px 20px 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  border-radius: 10px;
+  text-shadow: 0.9px 0.9px 0.8px $lightestGrey;
+  box-shadow: 7px 6px 30px 2px black;
+}
+.main-quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.main-quote p {
+  display: inline;
+}
+
+.footer-spacer {
+  height: 85px;
+  width: 100%;
+  clear: both;
 }
 
 ////////// FOOTER
