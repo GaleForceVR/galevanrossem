@@ -20,14 +20,24 @@ class PostController < ApplicationController
   # end
 
   def edit
+    @post = Post.find(params[:id])
   end
 
   def update
+    @post = Post.find(params[:id])
+    if @post.update_attributes(posts_creation_params)
+      redirect_to post_path(@post.id)
+    else
+      render :action => :edit
+    end
   end
 
   private
-  def post_creation_params
-    params.require(:post).permit(:title, :content, :image,
-      images_attributes: [:image_url] )
+  # def post_creation_params
+  #   params.require(:post).permit(:title, :content, :image,
+  #     images_attributes: [:image_url] )
+  # end
+  def posts_creation_params
+    params.require(:post).permit(:title, :content, :feature_caption, :image)
   end
 end

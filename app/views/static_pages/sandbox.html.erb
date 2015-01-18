@@ -36,3 +36,7 @@
     <div class="clear"></div>
   </div>
 </div>
+
+<% f.fields_for :category_assignment do |cat| %>
+  <%= cat.text_field :category_id, placeholder: "Category" %>
+<% end %>
