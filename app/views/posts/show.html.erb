@@ -1,4 +1,6 @@
 <% @posts.each do |post| %>
   <h3><%= post.title %></h3>
-  <p><%= post.content %><p>
+  <%= image_tag post.image.to_s, style: "width: 300px;" %>
+  <p><%= post.content.html_safe %><p>
+  <hr>
 <% end %>

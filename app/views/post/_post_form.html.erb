@@ -1,9 +1,9 @@
-<%= form_for @post, :html => {:multipart => true} do |f| %>
+<%= form_for @post, :html => {:multipart => true} do |f| %> 
   <%= f.text_field :title, placeholder: "Title" %>
   <div class="field">
   <%= f.text_area :content, class: "tinymce", :rows => 40, :cols => 120 %>
-  <%= f.submit %>
   </div>
   <%= f.text_field :feature_caption, placeholder: "Feature Image Caption" %>
   <%= f.file_field :image %>
+  <%= f.submit %>
 <% end %>

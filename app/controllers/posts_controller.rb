@@ -1,6 +1,12 @@
 class PostsController < ApplicationController
   def show
-    @posts = Post.all
+    @posts_all = Post.all 
+    # @posts = @posts_all.category_posts("post")
+    # @posts = Post.hello
+    @categories = Category.all
+    @category = Category.find_by(name: "blog_post")
+    # raise @category.inspect
+    @posts = @category.posts
   end
 
   def create

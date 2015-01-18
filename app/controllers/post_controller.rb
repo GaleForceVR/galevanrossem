@@ -7,6 +7,7 @@ class PostController < ApplicationController
 
   def new
     @post = Post.new
+    @category_assignment = CategoryAssignment.new
   end
 
   # def create
