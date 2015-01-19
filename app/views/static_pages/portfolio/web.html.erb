@@ -1,0 +1,32 @@
+<div class="left-gutter">
+  <div class="bio">
+    <%= image_tag('gvr-profile-photo.jpg', class: "profile-photo") %>
+    <h3>Web Developer Craftsman</h3>
+    <p>I'm an Entreprenuer and Graphic Designer turned Web Developer Craftsman. If you think that form and function are both equally important, then I think we should talk.</p>
+  </div>
+</div>
+
+<div class="main-content">
+  <article>
+
+    <div class="headline">
+      <h1>Web Portfolio</h1>
+      <p class="date-line"><%= Time.now.strftime("%B %d, %Y") %></p>
+    </div>
+
+    <div class="center-content">
+      <div class="feature-image-spacer"></div>
+      <div class="feature-image">
+        <%= image_tag @post.image.to_s %>
+        <p class="feature-image-caption"><%= @post.feature_caption %></p>
+      </div>
+      <h3><%= @post.title %></h3> 
+      <p><%= @post.content.html_safe %></p>
+    </div>
+
+    <div class="right-gutter">
+      
+    </div>
+
+  </article>
+</div>
