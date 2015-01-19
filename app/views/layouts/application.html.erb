@@ -19,12 +19,14 @@
       <div class="nav-highlight-rounder"></div>
       <div class="nav-shadow"></div>
       <div class="logo"><a href="/"><%= image_tag('gvr-logo-revised-alt.png') %></a></div>
+      
       <nav>
         <ul>
           <div class="nav-links">
-            <li>PROJECTS</li>
-            <li>BLOG</li>
-            <li>RESUME</li>
+            <li><a href="/portfolio/web">PROJECTS</a></li>
+            <li><a href="/posts">BLOG</a></li>
+            <li><a href="#">RESUME</a></li>
+            <div class="social-button"><a href="/social"><%= image_tag('social-button.png') %></a></div>  
           </div>
           <div class="login">
             <% if current_user %>
@@ -32,7 +34,7 @@
             <% else %>
               <li><%= link_to "LOGIN", new_user_session_path, :method => :get %></li>
               <li>SIGNUP</li>
-            <% end %>  
+            <% end %>
           </div> 
         </ul>
       </nav>

@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   resources :post, only: [:show, :new, :edit, :update]
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   get "/admin", to: "static_pages#admin", as: :admin_page
+  get "/portfolio/web", to: "static_pages#web", as: :web_portfolio_page
+  get "/portfolio/design", to: "static_pages#design", as: :design_portfolio_page
+  get "/portfolio/photography", to: "static_pages#photography", as: :photography_portfolio_page
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
