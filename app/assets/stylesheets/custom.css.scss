@@ -274,6 +274,22 @@ nav ul li a {
 
 //////////
 
+.notice, .alert {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.notice {
+  // background-color: green;
+  color: green;
+}
+
+.alert {
+  // background-color: red;
+  color: red;
+}
+
 .left-gutter {
   width: 13%;
   padding: 0 6.5% 3% 3%;
@@ -424,8 +440,17 @@ nav ul li a {
   box-shadow: 10px 8px 40px 5px $black;
 }
 
+.visual .portfolio-image {
+  width: 82.5%;
+  box-shadow: none;
+}
+
 .portfolio-image img {
   width: 100%;
+}
+
+.visual {
+  width: 35%;
 }
 
 .blog-page {
@@ -458,15 +483,35 @@ nav ul li a {
 
 .blog-page-image {
   display: inline-block;
-  width: 30%;
+  width: 100%;
   // float: left;
   position: absolute;
   margin: 0 6% 6% 0;
   box-shadow: 10px 8px 40px 5px $black;
 }
 
+.blog-page-image-wrapper {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 30%;
+  height: 1px;
+  padding-bottom: 20%;
+}
+
 .blog-page-image img {
   width: 100%;
+}
+
+.height-fix-image-wrapper {
+  width: 100%;
+  height: 1px;
+  padding-bottom: 100%
+}
+
+.design-image {
+  width: 90%!important;
+  padding: 5%;
 }
 
 .center-content {
@@ -623,21 +668,23 @@ nav ul li a {
 .home-solid .home-left {
   display: inline-block;
   float: left;
-  width: 48%;
+  width: 43%;
   padding: 0 3.5% 3.5% 3.5%;
   height: auto;
   font-size: 90%;
-  background-color: white;
-  color: $black;
+  background-color: transparent!important;
+  // background-color: white;
+  color: $lightestGrey;
   border-radius: 15px;
 }
 
 
 .home-solid .home-right {
   display: inline-block;
-  width: 38%;
-  padding: 0 3.5%;
-  background-color: $mediumGrey;
+  width: 46.5%;
+  padding: 0 0 0 3.5%;
+  background-color: transparent!important;
+  // background-color: $mediumGrey;
   min-height: 100px;
 }
 
@@ -650,32 +697,60 @@ nav ul li a {
 .home-transparent .home-left {
   display: inline-block;
   float: left;
-  width: 38%;
-  padding: 0 3.5%;
+  width: 46.5%;
+  padding: 0 3.5% 0 0;
   min-height: 100px;
-  background-color: #ccc;
+  background-color: transparent!important;
 }
 
 .home-transparent .home-right {
   display: inline-block;
-  width: 48%;
+  width: 43%;
   padding: 0 3.5% 3.5% 3.5%;
-  background-color: white;
+  background-color: transparent!important;
   min-height: 100px;
   font-size: 90%;
-  color: $black;
+  color: $lightestGrey;
   border-radius: 15px;
 }
 
 .home-headline {
-  // color: $lightestGrey;
-  color: $black;
+  color: $lightestGrey;
+  // color: $black;
   padding-bottom: 20px;
+  margin-top: 0;
+}
+
+.home-page-image {
+  width: 100%;
+}
+
+.home-page-button {
+  margin: 0 auto;
+  width: 250px;
+  height: 76px;
+}
+
+.home-page-buttons {
+  width: 250px;
+  margin: 0 auto;
 }
 
 .clear {
   width: 100%;
   clear: both;
+}
+
+.feature-blog-image {
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+.center-div {
+  width: 250px;
+  height: 76px;
+  margin: 0 auto;
+  // background-color: yellow;
 }
 
 .attribution {

@@ -5,5 +5,6 @@ class WelcomeController < ApplicationController
     # raise user_session.inspect
     # @user = User.find(user_session) if user_session
     @user = current_user
+    @post = Post.find(8)
   end
 end
