@@ -19,34 +19,61 @@
       <p>I've worked on a number of projects during and since including LightningVote.com, MISSINGlabel and my new portfolio/blog site. I'm also starting a new project called Rundeck.</p>
     </div>
     <div class="home-right">
-      
+      <%= image_tag('web-projects-alt.png', class: "home-page-image") %>
     </div>
 
-    <div class="clear"></div>
+    <div class="clear">
+      <div class="center-div">
+        <%= link_to web_portfolio_page_path, class: "home-page-button" do %>
+          <%= image_tag('learn-more-button.png', class: "home-page-buttons")%>
+        <% end %> 
+      </div>
+    </div>
   </div>
 </div>
 <div class="home-transparent">
   <div class="home-container">
     <div class="home-left">
-
+      <%= image_tag('web-projects.png', class: "home-page-image") %>
     </div>
     <div class="home-right">
-      <h1 class="home-headline">Other Things I've Built</h1>
-      <p>From the time I was a kid, I've always been a builder. From model rockets and model railroads to remote control cars and planes.</p>
-      <p>I've continued to build things throughout my life and I often find creative solutions to problems. As an entrepreneur, I've always had to find ways to do more with less money.</p>
-      <p>When I needed to raise sales, I built a sign out of wood that stood 12 feet tall in the back of a truck, and I designed my own logos and print materials for some of my business ventures.</p>
-      <p>As a Graphic Designer, I always pushed the envelope of my current skill level. I once wrapped a boat for a marketing campaign despite never having done so before.</p>
-      <p>Wrap-A-Tee.com was an attempt to take advantage of the relatively new process of Direct to Garment printing. When I found that I was wasting t-shirts and ink because there was no system to align the shirts properly, I designed and built my own shirt alignment table.</p>
+      <h1 class="home-headline">Visual Design and Photography</h1>
+      <p>I've been a photographer since I was three years old and I've always had an eye for images. It's not surprising that I eventually found my way to Graphic Design.</p>
+      <p>About ten years ago, I realized that as computers and networks gained speed, visual communication was going to become more and more important over time. At the time, I had little experience in either Graphic Design or Web Design.</p>
+      <p>The decision to change careers in my mid 30's was not an easy one, but I made the leap and took a pay cut to pursue a career in Graphic Design.</p>
+      <p>I worked feaverishly to learn everything I could about design and the tools I used such as Adobe Photoshop and Illustrator. I also attended every Photoshop/Photography conference I could make it to, and often had to pay my own way.</p>
+      <p>Eventually, I added Dreamweaver and then HTML5 and CSS3 to my list of learning goals. My goal now is to combine everything that I know about visual design and communication with everything that I've learned about Web Development.</p>
       <p>I'm always looking for new ways to do things. I am always learning and always open to try new approaches.</p>
       
     </div>
     <div class="clear">
-      
+      <div class="center-div">
+        <%= link_to web_portfolio_page_path, class: "home-page-button" do %>
+          <%= image_tag('learn-more-button.png', class: "home-page-buttons")%>
+        <% end %> 
+      </div>
     </div>
   </div>
 </div>
 <div class="home-solid">
   <div class="home-container">
+    <div class="home-left">
+      <h1 class="home-headline">Blog Post</h1>
+      <%= link_to post_path(@post.id) do %>
+          <h3><%= @post.title %></h3>
+        <% end %> 
+        <%= sanitize(truncate(@post.content, escape: false, length: 1200, separator: '</p>') { link_to "read more", post_path(@post.id) }) %>
+    </div>
+    <div class="home-right">
+      <%= image_tag @post.image.url(:medium).to_s, class: "feature-blog-image" %>
+      <div class="center-div">
+        <%= link_to post_path(@post.id), class: "home-page-button" do %>
+          <%= image_tag('read-blog-button.png', class: "home-page-buttons")%>
+        <% end %> 
+      </div>
+    </div>
+
+    <div class="clear"></div>
     
   </div>
 </div>

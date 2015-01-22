@@ -1,1 +1,35 @@
-<h1>Design</h1>
+<div class="left-gutter">
+  <div class="bio">
+    <%= image_tag('gvr-profile-photo.jpg', class: "profile-photo") %>
+    <div class="contact-button"><a href="mailto:galeforcevr@gmail.com:?subject=Gale's Portfolio site&body=Hi Gale, I was just taking a look at your website..."><%= image_tag('contact-button.png') %></a></div>
+    <p>I'm an Entreprenuer and Graphic Designer turned Web Developer Craftsman. If you think that form and function are both equally important, then I think we should talk.</p>
+  </div>
+</div>
+
+<div class="main-content">
+  <article>
+
+    <div class="portfolio-title">
+      <h1>Visual Design and Photography Portfolio</h1>
+    </div>
+    <% if @design_posts %>
+    <% @design_posts.each do |post| %>
+      <div class="center-content portfolio visual">
+        <div class="height-fix-image-wrapper">
+          <div class="portfolio-image">
+            <%= image_tag post.image.url(:large).to_s, class: "design-image" %>
+          </div>
+        </div>
+        <h3><%= post.title %></h3> 
+        <p><%= post.content.html_safe %></p>
+      </div>
+
+      <div class="right-gutter">
+        
+      </div>
+    <% end %>
+    <% end %>
+
+  </article>
+</div>
+<div class="clear-footer"></div>
