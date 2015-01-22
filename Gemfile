@@ -46,6 +46,7 @@ gem 'tinymce-rails'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'fog'
+gem 'jquery-turbolinks'
 
 gem 'figaro', '~> 0.7'
 

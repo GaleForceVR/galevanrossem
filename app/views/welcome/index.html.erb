@@ -33,9 +33,6 @@
 </div>
 <div class="home-transparent">
   <div class="home-container">
-    <div class="home-left">
-      <%= image_tag('web-projects.png', class: "home-page-image") %>
-    </div>
     <div class="home-right">
       <h1 class="home-headline">Visual Design and Photography</h1>
       <p>I've been a photographer since I was three years old and I've always had an eye for images. It's not surprising that I eventually found my way to Graphic Design.</p>
@@ -46,9 +43,12 @@
       <p>I'm always looking for new ways to do things. I am always learning and always open to try new approaches.</p>
       
     </div>
+    <div class="home-left">
+      <%= image_tag('web-projects.png', class: "home-page-image") %>
+    </div>
     <div class="clear">
       <div class="center-div">
-        <%= link_to web_portfolio_page_path, class: "home-page-button" do %>
+        <%= link_to design_portfolio_page_path, class: "home-page-button" do %>
           <%= image_tag('learn-more-button.png', class: "home-page-buttons")%>
         <% end %> 
       </div>
@@ -68,7 +68,7 @@
       <%= image_tag @post.image.url(:medium).to_s, class: "feature-blog-image" %>
       <div class="center-div">
         <%= link_to post_path(@post.id), class: "home-page-button" do %>
-          <%= image_tag('read-blog-button.png', class: "home-page-buttons")%>
+          <%= image_tag('read-blog-button.png', class: "home-page-buttons bottom-adjust")%>
         <% end %> 
       </div>
     </div>
