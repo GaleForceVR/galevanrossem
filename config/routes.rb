@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   resources :images, only: [:index, :show, :new, :create, :edit, :update]
-  resource :posts, only: [:show, :create]
+  resource :posts, only: [:show, :create, :download]
   resources :post, only: [:show, :new, :edit, :update]
+  resources :posts do get 'download', on: :member end
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+  get "/connect", to: "static_pages#connect", as: :social_page
   get "/admin", to: "static_pages#admin", as: :admin_page
   get "/portfolio/web", to: "static_pages#web", as: :web_portfolio_page
   get "/portfolio/design", to: "static_pages#design", as: :design_portfolio_page

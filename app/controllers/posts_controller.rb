@@ -31,8 +31,17 @@ class PostsController < ApplicationController
     end
   end
 
+  def download
+    send_file(@document.document_path)
+  end
+
   private
   def posts_creation_params
     params.require(:post).permit(:title, :content, :feature_caption, :image)
+  end
+
+  def set_document # Use callbacks to share common setup or constraints between actions. 
+    # @document = Document.find(params[:id])
+    @document = Post.find(20)
   end
 end
