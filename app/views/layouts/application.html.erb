@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Galevanrossem</title>
+  <%= favicon_link_tag %>
+  <%= favicon_link_tag 'mb-icon.png', rel: 'apple-touch-icon', type: 'image/png' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   
@@ -29,17 +31,17 @@
             <a href="#"><div class="menu-icon" data-no-turbolink></div></a>
             <ul class="menu-links-large" data-no-turbolink>
               <div class="nav-links" data-no-turbolink>
-                <li><a href="/portfolio/web">PROJECTS</a></li>
+                <li><a href="/portfolio/web">WEB PORTFOLIO</a></li>
+                <li><a href="/portfolio/design">DESIGN</a></li>
                 <li><a href="/posts">BLOG</a></li>
-                <li><a href="#">RESUME</a></li>
-                <div class="social-button"><a href="/social"><%= image_tag('social-button.png') %></a></div>  
+                <div class="social-button"><a href="/connect"><%= image_tag('social-button.png') %></a></div>  
               </div>
               <div class="login">
                 <% if current_user %>
                   <li><%= link_to "LOGOUT", destroy_user_session_path, :method => :delete %></li>
                 <% else %>
                   <li><%= link_to "LOGIN", new_user_session_path, :method => :get %></li>
-                  <li><%= link_to "SIGNUP", new_user_session_path, :method => :get %></li>
+                  <li><%= link_to "SIGNUP", "/users/sign_up", :method => :get %></li>
                 <% end %>
               </div>
             </ul>
@@ -53,17 +55,17 @@
             <a href="#"><div class="menu-icon" data-no-turbolink></div></a>
             <ul class="fallback menu-links" data-no-turbolink>
               <div class="nav-links" data-no-turbolink>
-                <li><a href="/portfolio/web">PROJECTS</a></li>
+                <li><a href="/portfolio/web">WEB PORTFOLIO</a></li>
+                <li><a href="/portfolio/design">DESIGN</a></li>
                 <li><a href="/posts">BLOG</a></li>
-                <li><a href="#">RESUME</a></li>
-                <div class="social-button"><a href="/social"><%= image_tag('social-button.png') %></a></div>  
+                <div class="social-button"><a href="/connect"><%= image_tag('social-button.png') %></a></div>  
               </div>
               <div class="login">
                 <% if current_user %>
                   <li><%= link_to "LOGOUT", destroy_user_session_path, :method => :delete %></li>
                 <% else %>
                   <li><%= link_to "LOGIN", new_user_session_path, :method => :get %></li>
-                  <li><%= link_to "SIGNUP", new_user_session_path, :method => :get %></li>
+                  <li><%= link_to "SIGNUP", "/users/sign_up", :method => :get %></li>
                 <% end %>
               </div>
             </ul>

@@ -35,6 +35,8 @@ $darkGrey       : lighten( $darkestGrey, 20% );
 $darkerGrey     : lighten( $darkestGrey, 5% );
 $black          : #000000;
 
+$galeForceVR    : #34dcd2;
+
 ///////// TEST DIVS
 
 /////////
@@ -428,9 +430,9 @@ nav ul li a {
   width: 85%;
   background-color: rgb(22, 22, 22);
   background-color: rgba(22, 22, 22, 0.6);
-  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* Standard syntax */
   color: $lightestGrey;
   text-shadow: 6px 6px 8px $black;
@@ -477,9 +479,9 @@ nav ul li a {
   width: 65%;
   background-color: rgb(22, 22, 22);
   background-color: rgba(22, 22, 22, 0.6);
-  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(red, blue); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(rgba(22,22,22,0.8), rgba(22,22,22,0.45)); /* Standard syntax */
   color: $lightestGrey;
   text-shadow: 6px 6px 8px $black;
@@ -518,6 +520,35 @@ nav ul li a {
 
 .blog-page-image img {
   width: 100%;
+}
+
+.social-page {
+  background-image: image-url('gale-force-vr-large.png');
+  background-size: 80%;
+  background-position: 195px -70px;
+  background-repeat: no-repeat;
+  width: 85%;
+}
+
+.teal span {
+  color: $galeForceVR;
+}
+
+.social-logo a img {
+  width: 50px;
+  display: inline-block;
+  float: left;
+}
+
+.social-logo a p {
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.social-links li {
+  padding: 20px 0;
 }
 
 .height-fix-image-wrapper {
@@ -856,6 +887,16 @@ footer {
   right: 30px;
 }
 
+.center-text {
+  text-align: center;
+}
+
+.my-name {
+  position: relative;
+  top: -25px;
+  display: none;
+}
+
 /*************************** MEDIA QUERIES
 
 
@@ -900,7 +941,7 @@ footer {
   .right-image-wrapper {
     margin: 5% 0 12% 8%;
     // height: 0;
-    // padding-bottom: 72%;
+    padding-bottom: 48%;
     // display: inline-block;
     width: 60%;
     // position: relative;
@@ -1157,6 +1198,13 @@ footer {
     right: 33%;
   }
 
+  .social-page {
+    // background-image: image-url('gale-force-vr-large.png');
+    // background-size: 80%;
+    background-position: 195px -30px;
+    // background-repeat: no-repeat;
+  }
+
   .logo img a {
     z-index: 5000;
   }
@@ -1340,6 +1388,13 @@ footer {
     right: 10px;
   }
 
+  .social-page {
+    // background-image: image-url('gale-force-vr-large.png');
+    background-size: 70%;
+    background-position: 215px 0px;
+    // background-repeat: no-repeat;
+  }
+
   .menu-links {
     width: 57%;
   }
@@ -1379,6 +1434,13 @@ footer {
   .logo a img{
     height: 35px;
     top: 17.5px;
+  }
+
+  .social-page {
+    background-image: none;
+    // background-size: 70%;
+    // background-position: 215px 60px;
+    // background-repeat: no-repeat;
   }
 
   .menu-links {

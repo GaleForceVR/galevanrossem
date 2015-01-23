@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
     @category = Category.find_by(name: "design")
     @design_posts = @category.posts.order(:created_at).reverse_order if @category
   end
+
+  def connect
+  end
 end
