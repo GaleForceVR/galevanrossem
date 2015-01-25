@@ -36,8 +36,8 @@ $(document).on({
   }
 }, '.menu-links'); // passing the selector in as an argument to the .on function
 
-$(document).on('click', '#dropdown-link', function() {
-  // e.preventDefault();
+$(document).on('click', '#dropdown-link > a', function(e) {
+  e.preventDefault();
   // $('.logo').css("z-index","999");
   // $('.menu-icon').css("display","none");
   // $('.menu-close-icon').css("display","block");
@@ -60,3 +60,10 @@ $(document).on({
   }
 
 }, '#dropdown');
+
+$(document).on({
+  mouseleave: function(){
+    $('#dropdown').stop().slideUp(400);
+  }
+
+}, '#dropdown-link');
