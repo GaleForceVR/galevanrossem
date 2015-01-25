@@ -29,6 +29,7 @@ $darkestGold    : darken( $lightGold, 62%);
 $darkestGrey    : #161616;
 $textGrey   : lighten( $darkestGrey, 90% );
 $lightestGrey   : lighten( $darkestGrey, 80% );
+$lighterGrey    : lighten( $darkestGrey, 65% );
 $lightGrey      : lighten( $darkestGrey, 60% );
 $mediumGrey     : lighten( $darkestGrey, 33% );
 $darkGrey       : lighten( $darkestGrey, 20% );
@@ -292,6 +293,40 @@ nav ul li a {
   display: inline-block;
   margin-right: 0;
   padding-right: 50px;
+}
+
+#dropdown li a {
+  display: table-row;
+  // background-color: red;
+  height: 40px;
+  padding: 0 10%;
+}
+
+#dropdown li a:hover {
+  color: $mediumGrey;
+}
+
+#dropdown li {
+  // background-color: blue;
+  display: table-header-group;
+  height: 40px;
+  padding: 0 10%;
+  line-height: 40px;
+  border-bottom: 1px solid $darkGrey;
+}
+
+#dropdown {
+  display: table;
+  height: 80px;
+  margin: 0;
+  padding: 0 10%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: $lightGrey;
+  // right: 30%;
+  box-shadow: 3px 3px 35px #000000;
+  border-bottom: 2px solid $richMarsala;
 }
 
 ////////// CONTENT
@@ -1346,11 +1381,12 @@ footer {
   }
   
   .nav-links {
-    height: 300px; 
+    height: 375px;
   }
 
   .login {
     border-top: 2px solid $mediumGrey;
+    height: 150px;
   }
 
   .nav-links li a:hover, .login li a:hover {
@@ -1361,7 +1397,7 @@ footer {
     height: 75px;
     width: 100%;
     background-color: $lightGrey;
-    border-bottom: 1px solid $lightestGrey;
+    border-bottom: 1px solid $lighterGrey;
   }
 
   .menu-links:hover {
@@ -1375,6 +1411,10 @@ footer {
     // background-color: blue;
     line-height: 75px;
     // text-align: right;
+  }
+
+  .menu-links .login li:nth-child(2) {
+    border-bottom: 2px solid $richMarsala;
   }
 
   // nav {
@@ -1394,7 +1434,6 @@ footer {
   //   top: 0;
   //   right: 0;
   // }
-
   nav ul li {
     display: block;
     // font-weight: bold;
@@ -1487,7 +1526,7 @@ footer {
   }
 
   .menu-links {
-    width: 57%;
+    width: 40%;
   }
 
   .portfolio-image {
@@ -1542,8 +1581,16 @@ footer {
     width: 100%;
   }
 
+  nav ul li {
+    padding-left: 0;
+  }
+
   nav ul li ul {
     width: 100%;
+  }
+
+  nav ul li ul li a {
+    text-align: center;
   }
 
   // .container {
