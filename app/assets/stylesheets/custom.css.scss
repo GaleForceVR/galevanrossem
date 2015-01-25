@@ -345,6 +345,11 @@ nav ul li a {
   width: 175px;
 }
 
+.resume-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .main-content {
   // width: 77.5%;
   float: right;
@@ -458,6 +463,19 @@ nav ul li a {
   margin: 0 6% 6% 0;
   box-shadow: 10px 8px 40px 5px $black;
 }
+
+.portfolio-image-web {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  // position: absolute;
+  margin: 0 6% 0 0;
+  box-shadow: 10px 8px 40px 5px $black;
+} 
+
+.portfolio-image-web img {
+  width: 100%;
+} 
 
 .visual .portfolio-image {
   width: 82.5%;
@@ -787,6 +805,7 @@ nav ul li a {
 .clear {
   width: 100%;
   clear: both;
+  height: 1px;
 }
 
 .feature-blog-image {
@@ -895,6 +914,39 @@ footer {
   position: relative;
   top: -25px;
   display: none;
+}
+
+///////////// EXPERIMENTAL
+
+.container .home-page-fix {
+  padding: 10% 20% 2% 20%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.home-page-fix .bio{
+  width: 100%;
+} 
+
+.home-page-fix .bio .profile-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.home-page-fix .bio .profile-photo-wrapper .profile-photo {
+  width: 200px;
+}
+
+.home-page-fix .bio .contact-button-wrapper {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.home-page-fix .bio .contact-button-wrapper .contact-button {
+  position: relative;
+  left: 4px;
 }
 
 /*************************** MEDIA QUERIES
@@ -1194,8 +1246,9 @@ footer {
 
   .social-button {
     // position: fixed;
-    top: 10px;
-    right: 33%;
+    display: none;
+    top: 320px;
+    right: 10px;
   }
 
   .social-page {
@@ -1225,8 +1278,22 @@ footer {
     background-size: 40px 40px;
     background-repeat: no-repeat;
     background-position: top center;
-    position: relative;
+    position: fixed;
     top: 17.5px;
+    right: 10px;
+  }
+
+  .menu-close-icon {
+    display: none;
+    width: 75px;
+    height: 75px;
+    background-image: image-url('menu-icon.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: fixed;
+    top: 17.5px;
+    right: 10px;
   }
 
   .fallback {
@@ -1236,7 +1303,10 @@ footer {
   .menu-links {
     width: 30%;
     // background-color: red;
-    float: right;
+    // float: right;
+    position: fixed;
+    top: 75px;
+    right: 0;
   }
 
 
@@ -1376,6 +1446,12 @@ footer {
     // color: $lightestGrey;
     // border-radius: 15px;
   }
+}
+
+@media (max-width: 850px) {
+  // .resume-container {
+  //   width: 100%!important;
+  // }
 }
 
 @media (max-width: 767px) {

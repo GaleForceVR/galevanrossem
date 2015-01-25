@@ -7,19 +7,21 @@
     <% if @web_posts %>
     <% @web_posts.each do |post| %>
       <div class="center-content portfolio">
-        <div class="portfolio-image">
+        <div class="portfolio-image-web">
           <%= image_tag post.image.url(:xtr_large).to_s %>
         </div>
         <h3><%= post.title %></h3> 
         <p><%= post.content.html_safe %></p>
+        <div class="clear"></div>
       </div>
 
       <div class="right-gutter">
         
       </div>
-    <% end %>
-    <% end %>
 
+    <% end %>
+    <% end %>
+    
   </article>
 </div>
 <%= render partial: "layouts/bio" %>

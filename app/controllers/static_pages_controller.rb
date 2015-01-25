@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   end
   def web
     @category = Category.find_by(name: "web")
-    @web_posts = @category.posts.order(:created_at) if @category
+    @web_posts = @category.posts.order(:created_at).reverse_order if @category
   end
 
   def design
@@ -12,5 +12,8 @@ class StaticPagesController < ApplicationController
   end
 
   def connect
+  end
+
+  def resume
   end
 end

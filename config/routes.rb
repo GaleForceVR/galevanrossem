@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/portfolio/web", to: "static_pages#web", as: :web_portfolio_page
   get "/portfolio/design", to: "static_pages#design", as: :design_portfolio_page
   get "/portfolio/photography", to: "static_pages#photography", as: :photography_portfolio_page
+  get "/resume", to: "static_pages#resume", as: :resume_page
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
