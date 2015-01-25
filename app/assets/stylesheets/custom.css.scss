@@ -243,6 +243,12 @@ header {
   width: 170px;
 }
 
+.social-button-bio a img {
+  position: relative;
+  left: 20px;
+  width: 140px;
+}
+
 nav {
   color: black;
   height: 75px;
@@ -949,6 +955,10 @@ footer {
   left: 4px;
 }
 
+.social-button-bio {
+  display: none;
+}
+
 /*************************** MEDIA QUERIES
 
 
@@ -1108,6 +1118,11 @@ footer {
     position: fixed;
     top: 80px;
     right: 10px;
+    display: none;
+  }
+
+  .social-button-bio {
+    display: block;
   }
 
   .main-content {
@@ -1482,6 +1497,10 @@ footer {
     margin-left: 5%;
   }
 
+  .portfolio-image-web {
+    margin: 0 10% 8% 0;
+  }
+
   .portfolio h3 {
     padding: 0 5%;
   }
@@ -1545,6 +1564,10 @@ footer {
 
   .right-image-wrapper {
     margin-bottom: 10%;
+  }
+
+  .portfolio-image-web {
+    width: 100%;
   }
 }
 
