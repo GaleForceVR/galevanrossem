@@ -41,6 +41,8 @@ $(document).on('click', '#dropdown-link', function() {
   // $('.logo').css("z-index","999");
   // $('.menu-icon').css("display","none");
   // $('.menu-close-icon').css("display","block");
+  $('#dropdown').css("display","table");
+  $('#dropdown').hide();
   $('#dropdown').slideDown(200);
   // $('.social-button').show(800);
   // $('.menu-links').show();
