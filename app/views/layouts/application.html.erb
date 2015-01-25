@@ -31,9 +31,14 @@
             <a href="#"><div class="menu-icon" data-no-turbolink></div></a>
             <ul class="menu-links-large" data-no-turbolink>
               <div class="nav-links" data-no-turbolink>
-                <li><a href="/portfolio/web">WEB PORTFOLIO</a></li>
-                <li><a href="/portfolio/design">DESIGN</a></li>
+                <li id="dropdown-link" data-no-turbolink><a href="#">PORTFOLIO</a>
+                  <ul id="dropdown" data-no-turbolink>
+                    <li data-no-turbolink><a href="/portfolio/web">WEB PORTFOLIO</a></li>
+                    <li data-no-turbolink><a href="/portfolio/design">DESIGN</a></li>
+                  </ul>
+                </li>
                 <li><a href="/posts">BLOG</a></li>
+                <li><a href="/resume">RESUME</a></li>
                 <div class="social-button"><a href="/connect"><%= image_tag('social-button.png') %></a></div>  
               </div>
               <div class="login">
@@ -59,6 +64,7 @@
                 <li><a href="/portfolio/web">WEB PORTFOLIO</a></li>
                 <li><a href="/portfolio/design">DESIGN</a></li>
                 <li><a href="/posts">BLOG</a></li>
+                <li><a href="/resume">RESUME</a></li>
                 <li><a href="/connect">SOCIAL</a></li>
               </div>
               <div class="login">
