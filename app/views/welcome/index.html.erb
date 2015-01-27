@@ -10,22 +10,39 @@
 <div class="home-solid">
   <div class="home-container">
     <div class="home-left">
-      <h1 class="home-headline">Things I've Built on the Web</h1>
-      <p>I built my first two websites, MadisensMatch.com, and  Kiwanis5krun.com in 2011 with Adobe Dreamweaver.</p>
-      <p>I quickly graduated to learning HTML5, CSS3, and Javascript. While learning, I also built a Joomla blog site for Evolve Fantasy Sports and  Wordpress child theme site for my own DunkCityFL.com.</p>
-      <p>Last year, I dreamed up, built, and ran an entire e-commerce t-shirt printing company called Wrap-A-Tee.com (Calusa Digi, Inc.) by myself from the ground up. My e-commerce adventure ultimately reinforced my love for visual design, web design and programming. That, in turn, led me to Dev Bootcamp and a chance to pursue my true passion.</p>
-      <p>I've worked on a number of projects during and since including LightningVote.com, MISSINGlabel and my new portfolio/blog site. I'm also starting a new project called Rundeck.</p>
+      <h1 class="home-headline">A history of learning and building</h1>
+      <ul>
+        <ul>
+          <h4>2014/2015 - Attended Dev Bootcamp to become a Full Stack Web Developer</h4>
+          <li>MISSING label <span>- Cordova front end with a Rails-based API on the backend</span></li>
+          <li>Lightning Vote <span>- Rails-based lightning talk management app</span></li>
+          <li>GaleVanRossem.herokuapp.com <span>- Rails-based portfolio and blog site for myself</span></li>
+          <li>Phasebook <span>- Rails-based social network for DBC students</span></li>
+          <li>Rundeck <span>- Rails-based running time log</span></li>
+        </ul>
+        <ul>
+          <h4>2013 - learned Javascript, Wordpress Development and e-commerce</h4>
+          <li>DunkCityFL.com <span>- Custom theme Wordpress blog site</span></li>
+          <li>Wrap-A-Tee.com <span>- I created and built an entire e-commerce business called Wrap-A-Tee.com.</span></li>
+        </ul>
+        <ul>
+          <h4>2012 - learned HTML5, CSS3 and Adobe Edge Animate.</h4>
+          <li>MadisensMatch.com <span>- I re-built the Flash animations in Edge Animate.</span></li>
+          <li>EvolveFantasyFootball.com <span>- I learned how to build a site in Joomla and created a Kickstarter campaign.</span></li>
+        </ul>
+        <ul>
+          <h4>2011 - learned Adobe Dreamweaver and Flash</h4>
+          <li>MadisensMatch.com</li>
+          <li>Kiwanis5krun.com</li>
+        </ul>
+      </ul>
     </div>
     <div class="home-right">
       <%= image_tag('web-projects-alt.png', class: "home-page-image") %>
-    
-
-    
-      <div class="center-div">
-        <%= link_to web_portfolio_page_path, class: "home-page-button" do %>
-          <%= image_tag('learn-more-button.png', class: "home-page-buttons")%>
-        <% end %> 
-      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="center-div">    
+        <%= link_to "View Web Portfolio", web_portfolio_page_path, class: "button" %> 
     </div>
     <div class="clear"></div>
   </div>
@@ -40,14 +57,11 @@
       
     </div>
     <div class="home-left">
-      <%= image_tag('design-and-photography.png', class: "home-page-image") %>
-    
-    
-      <div class="center-div">
-        <%= link_to design_portfolio_page_path, class: "home-page-button" do %>
-          <%= image_tag('learn-more-button.png', class: "home-page-buttons")%>
-        <% end %> 
-      </div>
+      <%= image_tag('design-and-photography.png', class: "home-page-image") %>    
+    </div>
+    <div class="clear"></div>
+    <div class="center-div">    
+        <%= link_to "View Visual Portfolio", design_portfolio_page_path, class: "button" %> 
     </div>
     <div class="clear"></div>
   </div>
@@ -66,28 +80,24 @@
 
     <div class="home-right">
       <%= image_tag @post.image.url(:medium).to_s, class: "feature-blog-image" %>
-      <div class="center-div">
-        <%= link_to post_path(@post.id), class: "home-page-button" do %>
-          <%= image_tag('read-blog-button.png', class: "home-page-buttons bottom-adjust")%>
-        <% end %> 
+      <div class="center-div">    
+          <%= link_to "Read Blog Post", post_path(@post.id), class: "button" %> 
       </div>
     </div>
-
-    <div class="clear"></div>
-    
+    <div class="clear"></div>   
   </div>
 </div>
-
 <div class="left-gutter home-page-fix">
   <div class="bio">
     <div class="profile-photo-wrapper">
       <%= image_tag('gvr-profile-photo.jpg', class: "profile-photo") %>
     </div>
     <div class="contact-button-wrapper">
-      <div class="contact-button"><a href="mailto:galeforcevr@gmail.com:?subject=Gale's Portfolio site&body=Hi Gale, I was just taking a look at your website..."><%= image_tag('contact-button.png') %></a></div>
+      <div class="center-div contact-button">    
+          <%= link_to "Contact", "mailto:galeforcevr@gmail.com:?subject=Gale's Portfolio site&body=Hi Gale, I was just taking a look at your website...", class: "button" %> 
+      </div>
       <div class="social-button-bio"><a href="/connect"><%= image_tag('social-button.png') %></a></div>
     </div>
-    <h2 class="center-text my-name"><a href="mailto:galeforcevr@gmail.com:?subject=Gale's Portfolio site&body=Hi Gale, I was just taking a look at your website...">Gale VanRossem</a></h2>
   </div>
 </div>
 <div class="footer-spacer"></div>
