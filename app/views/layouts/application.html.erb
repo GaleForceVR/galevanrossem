@@ -18,13 +18,14 @@
 </head>
 <body>
   <div class="wrapper">
-
+    <div class="logo-cutout"><a href="/"><%= image_tag('galeforcevr-logo-dark-web.png') %></a></div>
     <header>
       <div class="nav-highlight"></div>
       <div class="nav-highlight-rounder"></div>
       <div class="nav-shadow"></div>
-      <div class="logo"><a href="/"><%= image_tag('gvr-logo-revised-alt.png') %></a></div>
-      
+      <div class="logo"><a href="/"><%= image_tag('galeforcevr-logo-dark-web-clip.png') %></a></div>
+      <h3 class="my-name-logo"><a href="/">Gale VanRossem</a></h3>
+      <p class="my-title">Full Stack Web Developer</p>
       <nav class="menu-large" data-no-turbolink>
         <ul data-no-turbolink>
           <li data-no-turbolink>
@@ -38,8 +39,24 @@
                   </ul>
                 </li>
                 <li><a href="/posts">BLOG</a></li>
-                <li><a href="/resume">RESUME</a></li>
-                <div class="social-button"><a href="/connect"><%= image_tag('social-button.png') %></a></div>  
+                <li><a href="/resume">RESUME</a></li> 
+              </div>
+              <div class="social-icons">
+                <div class="github">
+                  <%= link_to "https://github.com/GaleForceVR", target: "blank" do %>
+                    <%= image_tag('github-teal.png') %>
+                  <% end %>
+                </div>
+                <div class="linked-in">
+                  <%= link_to "https://www.linkedin.com/in/galeforcevr/", target: "blank" do %>
+                    <%= image_tag('linkedin-teal.png') %>
+                  <% end %>
+                </div>
+                <div class="twitter">
+                  <%= link_to "https://twitter.com/GaleForceVR", target: "blank" do %>
+                    <%= image_tag('twitter-teal.png') %>
+                  <% end %>
+                </div>
               </div>
               <div class="login">
                 <% if current_user %>
