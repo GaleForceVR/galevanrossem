@@ -1592,6 +1592,8 @@ footer {
 
   nav ul li a {
     display: block;
+    color: $black;
+    text-shadow: 1px 1px 0.8px $lightestGrey;
   }
 
   nav ul li {
