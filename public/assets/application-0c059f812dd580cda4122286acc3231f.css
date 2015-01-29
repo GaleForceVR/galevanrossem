@@ -1,0 +1,2170 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 32, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 52, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 75, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 115, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 159, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 227, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 250, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 275, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 288, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 300, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 309, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 332, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 344, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 422, /Users/galevanrossem/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+td,
+th {
+  padding: 0;
+}
+
+/* line 100, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+html {
+  height: 100%;
+}
+
+/* line 104, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+body {
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #e2e2e2;
+  background-color: #000000;
+  background-size: cover;
+  background-attachment: fixed;
+  letter-spacing: 1px;
+}
+
+/* line 115, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* line 120, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+a {
+  text-decoration: none;
+  color: #ad4540;
+}
+
+/* line 125, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 129, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+ul li ul {
+  padding-left: 20px;
+}
+
+/* line 137, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 141, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.container {
+  width: 100%;
+  padding-top: 7.5%;
+}
+
+/* line 151, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -35px;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  background-color: #000000;
+  box-shadow: 3px 3px 25px #000000;
+}
+
+/* line 172, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.menu-icon {
+  display: none;
+}
+
+/* line 176, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.menu-small {
+  display: none;
+}
+
+/* line 180, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.menu-large {
+  display: block;
+}
+
+/* line 184, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.nav-highlight {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 6px;
+  left: 0;
+  box-shadow: 0 -5.5px 12px 1px #fffcf5;
+  height: 10px;
+}
+
+/* line 194, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.nav-highlight-rounder {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: -3px;
+  height: 5px;
+  box-shadow: 0 4px 8px 2px #fffcf5;
+}
+
+/* line 203, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.nav-shadow {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  height: 10px;
+  box-shadow: 0 -7px 8px 1px #362602;
+}
+
+/* line 218, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.logo {
+  z-index: 4000;
+  display: none;
+}
+
+/* line 223, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.logo-cutout {
+  z-index: 600000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* line 232, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.logo a img {
+  position: absolute;
+  clip: rect(0px 425px 75px 0px);
+  top: 0;
+  left: 0;
+  height: 75px;
+}
+
+/* line 240, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.logo-cutout a img {
+  width: 250px;
+}
+
+/* line 244, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.my-name-logo {
+  font-size: 30px;
+  line-height: 40px;
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+}
+
+/* line 256, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.my-name-logo a {
+  color: #34dcd2;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* line 263, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.my-title {
+  color: #6a6a6a;
+  position: fixed;
+  top: 45px;
+  left: 15px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 275, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-button {
+  display: inline-block;
+  position: relative;
+  top: 14px;
+  margin-left: 40px;
+  height: 40px;
+}
+
+/* line 286, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-button a img {
+  height: 40px;
+}
+
+/* line 290, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button {
+  position: relative;
+  padding-top: 22px;
+}
+
+/* line 296, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button a {
+  position: relative;
+  left: -17px;
+}
+
+/* line 301, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button a img {
+  width: 170px;
+}
+
+/* line 305, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button.large .button {
+  left: -24px;
+  margin-bottom: 20px;
+}
+
+/* line 310, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-div.contact-button.small {
+  display: none;
+}
+
+/* line 314, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-button-bio a img {
+  position: relative;
+  left: 20px;
+  width: 140px;
+  margin-top: 20px;
+}
+
+/* line 321, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-icons {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+/* line 328, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-icons div {
+  display: inline-block;
+}
+
+/* line 332, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-icons div a img {
+  height: 15px;
+  padding-left: 25px;
+  position: relative;
+  top: 2px;
+}
+
+/* line 339, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+nav {
+  color: black;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  letter-spacing: 1px;
+}
+
+/* line 348, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* line 357, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+nav ul li {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 95%;
+  text-shadow: none !important;
+  padding-left: 50px;
+  height: 75px;
+  line-height: 75px;
+  letter-spacing: 2px;
+}
+
+/* line 370, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+/* line 379, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+nav ul li a:hover {
+  color: #34dcd2;
+  text-shadow: 2px 2px 2.5px #000000;
+}
+
+/* line 384, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.nav-links {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+/* line 391, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.login {
+  display: inline-block;
+  margin-right: 0;
+  padding-right: 50px;
+}
+
+/* line 397, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+#dropdown li a {
+  display: table-row;
+  height: 40px;
+  padding: 0 10%;
+}
+
+/* line 404, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+#dropdown li a:hover {
+  color: #34dcd2;
+}
+
+/* line 408, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+#dropdown li {
+  display: table-header-group;
+  height: 40px;
+  padding: 0 10%;
+  line-height: 40px;
+  border-bottom: 1px solid #232323;
+}
+
+/* line 417, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+#dropdown {
+  display: none;
+  height: 80px;
+  margin: 0;
+  padding: 0 10%;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  background-color: #2c2c2c;
+  box-shadow: 3px 3px 35px #000000;
+  border-bottom: 2px solid #494949;
+}
+
+/* line 431, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.button {
+  padding: 10px 40px;
+  background-color: #34dcd2;
+  border-radius: 3px;
+  color: #000000;
+  font-weight: normal;
+  margin: 30px;
+  display: inline-block;
+}
+
+/* line 449, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.notice, .alert {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+}
+
+/* line 455, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.notice {
+  color: green;
+}
+
+/* line 460, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.alert {
+  color: red;
+}
+
+/* line 465, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.left-gutter {
+  width: 13%;
+  padding: 0 6.5% 3% 3%;
+  display: inline-block;
+  color: #e2e2e2;
+  height: 100%;
+  float: left;
+}
+
+/* line 479, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.bio p {
+  font-weight: 300;
+  font-size: .8em;
+  padding-bottom: 100px;
+}
+
+/* line 485, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-bio {
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  padding: 30px 0 40px 0;
+}
+
+/* line 492, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.profile-photo {
+  width: 125px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 12px 3px #000000;
+}
+
+/* line 498, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-bio img.profile-photo {
+  width: 175px;
+}
+
+/* line 502, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.resume-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* line 507, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.main-content {
+  float: right;
+  width: 77.5%;
+  display: inline-block;
+  height: 100%;
+}
+
+/* line 515, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.headline {
+  position: relative;
+  width: 40%;
+  left: 0;
+  padding: 3.5% 60% 250px 1%;
+  color: #e2e2e2;
+}
+
+/* line 532, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-title {
+  position: relative;
+  width: 40%;
+  left: 0;
+  padding: 1.5% 60% 1.5% 1%;
+  color: #e2e2e2;
+}
+
+/* line 549, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-title h1, .headline h1 {
+  font-size: 250%;
+  margin: 0 0 12px 0;
+  text-shadow: 3px 3px 10px #000000;
+}
+
+/* line 555, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.greeting {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  color: #34dcd2;
+  padding-bottom: 15px;
+  font-weight: lighter;
+}
+
+/* line 564, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.sub-headline {
+  margin-top: 0;
+}
+
+/* line 568, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.date-line {
+  font-size: 80%;
+  margin: 0;
+  text-shadow: 1.5px 1.5px 1px #000000;
+}
+
+/* line 574, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-content {
+  position: relative;
+  top: -150px;
+  margin: 0 1% 0 1%;
+  padding: 4%;
+  min-height: 500px;
+  float: left;
+  width: 46.8%;
+  color: #000000;
+}
+
+/* line 587, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio {
+  position: relative !important;
+  top: 0;
+  margin-top: 5%;
+  width: 85%;
+  color: #e2e2e2;
+  text-shadow: 6px 6px 8px #000000;
+  min-height: 10px;
+}
+
+/* line 603, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio h3 {
+  margin-top: 0;
+  padding-left: 50%;
+}
+
+/* line 610, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio p {
+  padding-left: 50%;
+}
+
+/* line 614, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-image {
+  display: inline-block;
+  width: 40%;
+  position: absolute;
+  margin: 0 6% 6% 0;
+  box-shadow: 10px 8px 40px 5px #000000;
+}
+
+/* line 623, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-image-web {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  margin: 0 6% 0 0;
+  box-shadow: 10px 8px 40px 5px #000000;
+}
+
+/* line 632, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-image-web img {
+  width: 100%;
+}
+
+/* line 636, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.visual .portfolio-image {
+  width: 82.5%;
+  box-shadow: none;
+}
+
+/* line 641, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.portfolio-image img {
+  width: 100%;
+}
+
+/* line 645, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.visual {
+  width: 35%;
+}
+
+/* line 649, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page {
+  position: relative;
+  top: 0;
+  margin-top: 2%;
+  width: 65%;
+  color: #e2e2e2;
+  text-shadow: 6px 6px 8px #000000;
+  min-height: 10px;
+  font-size: 80%;
+}
+
+/* line 666, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-article {
+  background-color: #e2e2e2;
+}
+
+/* line 670, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page h3 {
+  margin-top: 0;
+  padding-left: 40%;
+}
+
+/* line 677, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page p {
+  padding-left: 40%;
+}
+
+/* line 681, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page-image {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  margin: 0 6% 6% 0;
+  box-shadow: 10px 8px 40px 5px #000000;
+}
+
+/* line 690, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page-image-wrapper {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 30%;
+  height: 1px;
+  padding-bottom: 20%;
+}
+
+/* line 699, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.blog-page-image img {
+  width: 100%;
+}
+
+/* line 703, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-page {
+  background-image: url(/assets/gale-force-vr-large-1a84930bc0ef5e4862adc4311e209fa5.png);
+  background-size: 80%;
+  background-position: 195px -70px;
+  background-repeat: no-repeat;
+  width: 85%;
+}
+
+/* line 711, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.teal span {
+  color: #34dcd2;
+}
+
+/* line 715, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-logo a img {
+  width: 50px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 721, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-logo a p {
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  top: 3px;
+}
+
+/* line 728, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-links li {
+  padding: 20px 0;
+}
+
+/* line 732, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.height-fix-image-wrapper {
+  width: 100%;
+  height: 1px;
+  padding-bottom: 100%;
+}
+
+/* line 738, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.design-image {
+  width: 90% !important;
+  padding: 5%;
+}
+
+/* line 744, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-content h1, .center-content h2, .center-content h3, .center-content h4, .center-content h5, .center-content h6 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.25px;
+}
+
+/* line 750, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-content a {
+  font-weight: bold;
+}
+
+/* line 754, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-content {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 758, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.feature-image {
+  position: absolute;
+  left: 75%;
+  top: -100px;
+  width: 95%;
+  background-color: #161616;
+  color: #e2e2e2;
+  box-shadow: 10px 8px 40px 5px #000000;
+}
+
+/* line 768, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.feature-image-caption {
+  clear: both;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: .8em;
+  width: 90%;
+  padding: 1% 5% 1% 5%;
+}
+
+/* line 776, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.feature-image img {
+  width: 100%;
+  display: block;
+}
+
+/* line 781, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.feature-image-spacer {
+  display: inline-block;
+  float: right;
+  height: 1px;
+  width: 30%;
+  padding-top: 70%;
+}
+
+/* line 789, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.left-image-wrapper {
+  margin: 10% 0 15% 0;
+  height: 0;
+  padding-bottom: 48%;
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  float: left;
+  left: -10%;
+  color: #e2e2e2;
+}
+
+/* line 801, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.left-image {
+  margin: 10% 0 10% 0;
+  display: inline-block;
+  width: 200%;
+  position: absolute;
+  float: left;
+  left: -100%;
+  top: -6%;
+  background-color: #161616;
+  color: #e2e2e2;
+  box-shadow: 7px 6px 30px 2px black;
+}
+
+/* line 814, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.left-image img {
+  width: 100%;
+}
+
+/* line 819, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.right-image-wrapper {
+  margin: 10% 0 15% 0;
+  height: 0;
+  padding-bottom: 72%;
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  float: right;
+  right: -10%;
+  color: #e2e2e2;
+}
+
+/* line 831, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.right-image {
+  margin: 10% 0 10% 0;
+  display: inline-block;
+  width: 300%;
+  position: absolute;
+  float: right;
+  right: -200%;
+  top: -6%;
+  background-color: #161616;
+  color: #e2e2e2;
+  box-shadow: 7px 6px 30px 2px black;
+}
+
+/* line 844, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.right-image img {
+  width: 100%;
+}
+
+/* line 849, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.gallery-thumb {
+  display: block;
+  width: 200px;
+  margin: 15px;
+}
+
+/* line 855, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.gallery-thumb img {
+  width: 100%;
+}
+
+/* line 859, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.images-form {
+  z-index: 980;
+}
+
+/* line 863, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home {
+  width: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 8%;
+}
+
+/* line 870, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-transparent, .home-solid {
+  width: 100%;
+  padding: 10% 0;
+}
+
+/* line 875, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home .home-container {
+  max-width: 600px;
+}
+
+/* line 879, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home .home-container, .home-transparent .home-container, .home-solid .home-container {
+  margin: 0 auto;
+}
+
+/* line 883, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-transparent .home-container, .home-solid .home-container {
+  max-width: 1000px;
+  height: inherit;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: lighter;
+}
+
+/* line 891, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-transparent .home-container h3, .home-solid .home-container h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+/* line 896, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-solid {
+  width: 100%;
+  background-color: #161616;
+}
+
+/* line 902, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-solid .home-left {
+  display: inline-block;
+  float: left;
+  width: 43%;
+  padding: 0 3.5% 3.5% 3.5%;
+  height: auto;
+  font-size: 90%;
+  background-color: transparent !important;
+  color: #e2e2e2;
+  border-radius: 15px;
+}
+
+/* line 916, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-solid .home-right {
+  display: inline-block;
+  width: 46.5%;
+  padding: 0 0 0 3.5%;
+  background-color: transparent !important;
+  min-height: 100px;
+}
+
+/* line 931, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-transparent .home-left {
+  display: inline-block;
+  float: left;
+  width: 46.5%;
+  padding: 0 3.5% 0 0;
+  min-height: 100px;
+  background-color: transparent !important;
+}
+
+/* line 940, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-transparent .home-right {
+  display: inline-block;
+  width: 43%;
+  padding: 0 3.5% 3.5% 3.5%;
+  background-color: transparent !important;
+  min-height: 100px;
+  font-size: 90%;
+  color: #e2e2e2;
+  border-radius: 15px;
+}
+
+/* line 951, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-headline {
+  color: #e2e2e2;
+  padding-bottom: 20px;
+  margin-top: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+/* line 960, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-image {
+  width: 100%;
+}
+
+/* line 964, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-button {
+  margin: 0 auto;
+  width: 250px;
+  height: 76px;
+}
+
+/* line 970, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-buttons {
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* line 975, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-container h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #6a6a6a;
+  margin-bottom: 5px;
+}
+
+/* line 981, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-container ul span {
+  font-size: 90%;
+  color: #6a6a6a;
+  font-style: italic;
+}
+
+/* line 987, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-container ul ul li {
+  list-style-type: disc;
+  margin-left: 25px;
+}
+
+/* line 992, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.clear {
+  width: 100%;
+  clear: both;
+  height: 1px;
+}
+
+/* line 998, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.feature-blog-image {
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+/* line 1003, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-div {
+  height: 76px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 1011, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.attribution {
+  float: right;
+  font-style: italic;
+}
+
+/* line 1016, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+blockquote {
+  background: #afafaf;
+  color: #000000;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 40px;
+  padding: 0.5em 10px 20px 10px;
+  quotes: "“" "”" "‘" "’";
+  border-radius: 10px;
+}
+
+/* line 1025, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* line 1033, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+blockquote p {
+  display: inline;
+}
+
+/* line 1037, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.main-quote {
+  background: #000000;
+  color: #e2e2e2;
+  margin: 1.5em 40px;
+  padding: 0.5em 10px 20px 10px;
+  quotes: "“" "”" "‘" "’";
+  border-radius: 10px;
+  box-shadow: 7px 6px 45px 15px black;
+  text-align: justify;
+}
+
+/* line 1049, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.main-quote:before {
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* line 1057, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.main-quote p {
+  display: inline;
+  font-weight: lighter;
+}
+
+/* line 1062, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.footer-spacer {
+  height: 85px;
+  width: 100%;
+  clear: both;
+}
+
+/* line 1072, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.clear-footer {
+  clear: both;
+  width: 100%;
+  height: 75px;
+}
+
+/* line 1078, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+footer {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+}
+
+/* line 1091, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.copyright a {
+  color: #494949;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* line 1099, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.center-text {
+  text-align: center;
+}
+
+/* line 1103, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.my-name {
+  position: relative;
+  top: -25px;
+  display: none;
+}
+
+/* line 1109, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.iframe {
+  border: none;
+}
+
+/* line 1115, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.container .home-page-fix {
+  padding: 10% 20% 2% 20%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* line 1121, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-fix .bio {
+  width: 100%;
+}
+
+/* line 1125, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-fix .bio .profile-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* line 1131, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-fix .bio .profile-photo-wrapper .profile-photo {
+  width: 200px;
+}
+
+/* line 1135, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button-wrapper {
+  margin-bottom: 40px;
+}
+
+/* line 1139, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.contact-button.large .button {
+  position: static;
+  float: left;
+  margin-left: 0;
+}
+
+/* line 1145, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-fix .bio .contact-button-wrapper {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+}
+
+/* line 1151, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.home-page-fix .bio .contact-button-wrapper .contact-button {
+  position: relative;
+  left: 4px;
+}
+
+/* line 1156, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+.social-button-bio {
+  display: none;
+}
+
+/*************************** MEDIA QUERIES
+
+
+********************/
+@media (max-width: 1600px) {
+  /* line 1166, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .container {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 1172, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-image-wrapper {
+    margin: 5% 8% 12% 0;
+    width: 60%;
+    left: 0;
+  }
+
+  /* line 1184, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-image {
+    margin: 0;
+    width: 100%;
+    position: static;
+    box-shadow: 3px 4px 18px 1px black;
+  }
+
+  /* line 1201, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .right-image-wrapper {
+    margin: 5% 0 12% 8%;
+    padding-bottom: 48%;
+    width: 60%;
+    right: 0;
+  }
+
+  /* line 1213, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .right-image {
+    margin: 0;
+    width: 100%;
+    position: static;
+    box-shadow: 3px 4px 18px 1px black;
+  }
+}
+@media (max-width: 1300px) {
+  /* line 1232, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .center-content {
+    position: static;
+    width: 85%;
+    margin: 0;
+  }
+
+  /* line 1238, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .blog-page {
+    margin-top: 4%;
+  }
+
+  /* line 1242, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-gutter {
+    width: 13%;
+    padding: 0 6.5% 3% 3%;
+    display: inline-block;
+    color: #e2e2e2;
+    height: 100%;
+    float: left;
+  }
+
+  /* line 1252, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .headline {
+    width: 56.5%;
+    left: 0;
+    padding: 3.5% 40% 3.5% 3.5%;
+    margin-bottom: 3.5%;
+    color: #e2e2e2;
+  }
+
+  /* line 1270, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-title {
+    width: 56.5%;
+    left: 0;
+    padding: 3.5% 40% 3.5% 3.5%;
+    margin-bottom: 3.5%;
+  }
+
+  /* line 1277, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .feature-image-spacer {
+    display: none;
+  }
+
+  /* line 1281, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .feature-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    width: 90%;
+    padding: 5% 5% 2% 5%;
+    background-color: #000000;
+  }
+
+  /* line 1292, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .design-image {
+    width: 100% !important;
+  }
+
+  /* line 1296, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .visual-fix {
+    margin: 0;
+  }
+
+  /* line 1300, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio {
+    margin-top: 4%;
+  }
+
+  /* line 1304, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-image-wrapper {
+    margin-bottom: 5%;
+  }
+
+  /* line 1308, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .right-image-wrapper {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 1150px) {
+  /* line 1315, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .my-name-logo {
+    font-size: 30px;
+    line-height: 40px;
+    top: 10px;
+  }
+
+  /* line 1340, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-button {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    display: none;
+  }
+
+  /* line 1347, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-button-bio {
+    display: block;
+  }
+
+  /* line 1351, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-icons {
+    padding-right: 10px;
+  }
+
+  /* line 1360, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-icons div a img {
+    padding-left: 10px;
+  }
+
+  /* line 1367, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .login {
+    padding-right: 40px;
+  }
+
+  /* line 1371, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li {
+    padding-left: 40px;
+  }
+
+  /* line 1375, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .main-content {
+    width: 100%;
+  }
+
+  /* line 1379, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .main-content article {
+    width: 100%;
+  }
+
+  /* line 1383, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .headline {
+    width: 88%;
+    padding: 2% 3.5% 2% 3.5%;
+    float: right;
+    margin-bottom: 5%;
+  }
+
+  /* line 1391, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-solid .home-left {
+    width: 38.5%;
+    padding: 0 3.5% 3.5% 8%;
+  }
+
+  /* line 1403, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-solid .home-right {
+    width: 38.5%;
+    padding: 0 8% 0 3.5%;
+  }
+
+  /* line 1411, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-transparent .home-left {
+    width: 38.5%;
+    padding: 0 3.5% 0 8%;
+  }
+
+  /* line 1420, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-transparent .home-right {
+    width: 38.5%;
+    padding: 0 8% 3.5% 3.5%;
+  }
+
+  /* line 1431, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-title {
+    width: 88%;
+    padding: 2% 3.5% 2% 3.5%;
+    float: right;
+  }
+
+  /* line 1450, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .center-content {
+    width: 90%;
+    padding: 5%;
+    border-radius: 0;
+  }
+
+  /* line 1456, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .container .left-gutter {
+    padding: 10% 20% 2% 20%;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* line 1462, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .bio {
+    width: 100%;
+  }
+
+  /* line 1466, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .bio p {
+    width: 80%;
+    display: none;
+  }
+
+  /* line 1471, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .profile-photo-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  /* line 1477, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .profile-photo {
+    width: 200px;
+  }
+
+  /* line 1481, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .contact-button-wrapper {
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  /* line 1487, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .contact-button {
+    position: relative;
+    left: 4px;
+  }
+
+  /* line 1492, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .center-div.contact-button.large {
+    display: none;
+  }
+
+  /* line 1496, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .center-div.contact-button.small {
+    display: block;
+  }
+}
+@media (max-width: 999px) {
+  /* line 1503, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  header {
+    background-position: 0 0;
+  }
+
+  /* line 1518, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .container {
+    padding-top: 12.5%;
+  }
+
+  /* line 1522, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-button {
+    display: none;
+    top: 320px;
+    right: 10px;
+  }
+
+  /* line 1529, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-page {
+    background-position: 195px -30px;
+  }
+
+  /* line 1536, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .logo img a {
+    z-index: 5000;
+  }
+
+  /* line 1540, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-small {
+    display: block;
+  }
+
+  /* line 1544, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-large {
+    display: none;
+  }
+
+  /* line 1548, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-icon {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-image: url(/assets/menu-icon-grey-ecda9766b1db295123e4a8cc39d8a84e.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: fixed;
+    top: 22.5px;
+    right: 10px;
+  }
+
+  /* line 1561, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-close-icon {
+    display: none;
+    width: 75px;
+    height: 75px;
+    background-image: url(/assets/menu-icon-grey-ecda9766b1db295123e4a8cc39d8a84e.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: fixed;
+    top: 17.5px;
+    right: 10px;
+  }
+
+  /* line 1574, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .fallback {
+    display: none;
+  }
+
+  /* line 1578, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links {
+    width: 30%;
+    position: fixed;
+    top: 75px;
+    right: 0;
+  }
+
+  /* line 1589, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav {
+    width: 50%;
+  }
+
+  /* line 1593, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li a {
+    display: block;
+    color: #000000;
+    text-shadow: 1px 1px 0.8px #e2e2e2;
+  }
+
+  /* line 1599, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li {
+    text-shadow: 1px 1px 1.2px #e2e2e2;
+  }
+
+  /* line 1603, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .nav-links, .login {
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #6a6a6a;
+  }
+
+  /* line 1610, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .nav-links {
+    height: 375px;
+  }
+
+  /* line 1614, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .login {
+    border-top: 2px solid #6a6a6a;
+    height: 150px;
+  }
+
+  /* line 1619, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .nav-links li a:hover, .login li a:hover {
+    color: #6a6a6a;
+  }
+
+  /* line 1623, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links .nav-links li, .menu-links .login li {
+    height: 75px;
+    width: 100%;
+    background-color: #afafaf;
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  /* line 1630, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links:hover {
+    display: block;
+  }
+
+  /* line 1634, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links .nav-links li a {
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+  }
+
+  /* line 1643, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links .login li:nth-child(2) {
+    border-bottom: 2px solid #ad4540;
+  }
+
+  /* line 1664, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li {
+    display: block;
+  }
+
+  /* line 1691, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-solid .home-left {
+    width: 80%;
+    padding: 0 10% 3.5% 10%;
+  }
+
+  /* line 1703, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-solid .home-right {
+    width: 70%;
+    padding: 0 15% 0 15%;
+  }
+
+  /* line 1711, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-transparent .home-left {
+    width: 70%;
+    padding: 0 15% 0 15%;
+  }
+
+  /* line 1720, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-transparent .home-right {
+    width: 80%;
+    padding: 0 10% 3.5% 10%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1739, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .logo a img {
+    height: 40px;
+    top: 15px;
+  }
+
+  /* line 1744, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-button {
+    right: 10px;
+  }
+
+  /* line 1748, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-page {
+    background-size: 70%;
+    background-position: 215px 0px;
+  }
+
+  /* line 1755, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links {
+    width: 40%;
+  }
+
+  /* line 1759, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-image {
+    position: static;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  /* line 1766, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-image-web {
+    margin: 0 10% 8% 0;
+  }
+
+  /* line 1770, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio h3 {
+    padding: 0 5%;
+  }
+
+  /* line 1774, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio p {
+    padding: 0 5%;
+  }
+
+  /* line 1778, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .center-content {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  /* line 1783, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .headline {
+    margin-top: 3%;
+  }
+
+  /* line 1787, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-title {
+    margin-top: 3%;
+  }
+}
+@media (max-width: 643px) {
+  /* line 1795, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .logo a img {
+    height: 35px;
+    top: 17.5px;
+  }
+
+  /* line 1800, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .social-page {
+    background-image: none;
+  }
+
+  /* line 1807, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-links {
+    width: 100%;
+  }
+
+  /* line 1811, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li {
+    padding-left: 0;
+  }
+
+  /* line 1815, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li ul {
+    width: 100%;
+  }
+
+  /* line 1819, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li ul li a {
+    text-align: center;
+  }
+
+  /* line 1827, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .headline {
+    margin-top: 5%;
+  }
+
+  /* line 1831, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-title {
+    margin-top: 5%;
+  }
+
+  /* line 1835, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-image-wrapper {
+    margin-bottom: 10%;
+  }
+
+  /* line 1839, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .right-image-wrapper {
+    margin-bottom: 10%;
+  }
+
+  /* line 1843, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-image-web {
+    width: 100%;
+  }
+
+  /* line 1847, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .main-quote {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  /* line 1853, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  body {
+    font-size: 85%;
+  }
+
+  /* line 1857, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .container {
+    padding-top: 20%;
+  }
+
+  /* line 1861, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home {
+    padding-bottom: 15%;
+  }
+
+  /* line 1865, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .home-page-image {
+    margin-bottom: 15px;
+  }
+
+  /* line 1869, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .menu-icon {
+    background-size: 30px 30px;
+    background-position: right top;
+    position: fixed;
+    top: 22.5px;
+    right: 22.5px;
+  }
+
+  /* line 1882, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .headline {
+    font-size: 65%;
+  }
+
+  /* line 1894, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .portfolio-title {
+    font-size: 65%;
+  }
+
+  /* line 1906, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .bottom-adjust {
+    position: relative;
+    left: -10px;
+  }
+
+  /* line 1911, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .left-image-wrapper {
+    margin: 5% 0 7% 0;
+    height: auto;
+    padding-bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  /* line 1923, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  .right-image-wrapper {
+    margin: 5% 0 7% 0;
+    height: auto;
+    padding-bottom: 0;
+    width: 100%;
+    right: 0;
+  }
+
+  /* line 1935, /Users/galevanrossem/projects/galevanrossem/app/assets/stylesheets/custom.css.scss */
+  nav ul li {
+    font-size: 1.2em;
+  }
+}
